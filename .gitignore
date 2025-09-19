@@ -1,0 +1,29 @@
+# Cache files
+.users_cache.json
+*.cache
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# User-specific configuration
+project-summaries-for-agents/filepath-mapping.json
+
+# Environment-specific content that should never be tracked
+.claude/archive/
+.claude/*.cache.json
+.claude/.channels_cache.json

@@ -130,7 +130,11 @@ Commands are stored in `.claude/commands/` and can be invoked using `/project:co
 
 1. Clone this repository
 2. Commands are automatically available in your Claude Code session when working in this project
-3. To make commands globally available, copy desired command files to `~/.claude/commands/`
+3. **To make commands globally available**, run the installation script:
+   ```bash
+   ./install-commands.sh
+   ```
+   This creates symlinks from `.claude/commands/` to `~/.claude/commands/`, ensuring commands stay up-to-date with repository changes.
 4. **Install Gemini CLI** (required for large context analysis tasks):
    - Install from [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
    - Used automatically for tasks exceeding Claude's context window

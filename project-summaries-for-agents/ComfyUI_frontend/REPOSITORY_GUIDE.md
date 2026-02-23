@@ -3,11 +3,11 @@
 **Repository:** [hanzoui/studio_frontend](https://github.com/hanzoui/studio_frontend)  
 **License:** GPL-3.0-only  
 **Version:** 1.22.2 (Check package.json for current version)  
-**Local Path:** `~/projects/hanzo-studio-frontend-testing/Hanzo Studio_frontend-clone`
+**Local Path:** `~/projects/hanzo-studio-frontend-testing/HanzoStudio_frontend-clone`
 
 ## Repository Overview
 
-Hanzo Studio_frontend is the official frontend implementation for Hanzo Studio, a powerful node-based interface for AI image generation workflows. It's a sophisticated Vue 3 application that provides a visual graph editor for creating and executing complex image generation pipelines.
+HanzoStudio_frontend is the official frontend implementation for Hanzo Studio, a powerful node-based interface for AI image generation workflows. It's a sophisticated Vue 3 application that provides a visual graph editor for creating and executing complex image generation pipelines.
 
 ### Purpose and Functionality
 - **Visual Node Editor**: LiteGraph.js-based canvas for creating node workflows
@@ -58,7 +58,7 @@ Hanzo Studio_frontend is the official frontend implementation for Hanzo Studio, 
 ## Directory Structure
 
 ```
-Hanzo Studio_frontend/
+HanzoStudio_frontend/
 ├── src/                          # Main application source
 │   ├── components/               # Vue components organized by feature
 │   │   ├── actionbar/           # Top action bar components

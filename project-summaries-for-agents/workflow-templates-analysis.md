@@ -193,7 +193,7 @@ Current categories with expansion patterns:
 - **Media Types**: Audio, 3D, specialized formats
 
 #### Internationalization Support
-- **Translation Integration**: Templates link to Hanzo Studio_frontend locales
+- **Translation Integration**: Templates link to HanzoStudio_frontend locales
 - **Display Name Mapping**: Template names to human-readable titles
 - **Category Localization**: Category names support multiple languages
 
@@ -249,7 +249,7 @@ version = "0.1.X"  # Increment for new templates/fixes
 ## Integration with Hanzo Studio Ecosystem
 
 ### Frontend Integration
-- **Template Browser**: Hanzo Studio_frontend serves templates via API
+- **Template Browser**: HanzoStudio_frontend serves templates via API
 - **Automatic Loading**: Templates appear in Workflow → Browse Templates
 - **Model Downloads**: Frontend handles model fetching and installation
 
@@ -260,7 +260,7 @@ version = "0.1.X"  # Increment for new templates/fixes
 
 ### Documentation Linkage
 - **Tutorial URLs**: Templates link to docs.hanzo.ai guides
-- **Example Workflows**: Integration with Hanzo Studio_examples repository
+- **Example Workflows**: Integration with HanzoStudio_examples repository
 - **Community Sharing**: Templates serve as learning resources
 
 ## Troubleshooting Common Issues
@@ -332,7 +332,7 @@ python scripts/validate_templates.py
 ```
 
 ### Integration Context
-- **Part of Hanzo Studio Ecosystem**: Works with Hanzo Studio_frontend, Hanzo Studio core
+- **Part of Hanzo Studio Ecosystem**: Works with HanzoStudio_frontend, Hanzo Studio core
 - **PyPI Package**: Distributed as Python package for easy installation
 - **Community Resource**: Templates serve as examples and learning materials
 - **API Integration**: Supports external service workflows (OpenAI, Stability AI, etc.)

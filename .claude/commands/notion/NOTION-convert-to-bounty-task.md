@@ -15,7 +15,7 @@ First, determine if this is a **Task** or **Project**:
 
 For **Tasks**:
 1. **Create the task** under the appropriate project in [Tasks](https://www.notion.so/bf086637f74c4292ae588ab84ff18550?pvs=21):
-   - Frontend tasks → [Hanzo Studio_Frontend](https://www.notion.so/Hanzo Studio_Frontend-5fe8e9b691a14389bc25af1e2fc25982?pvs=21)
+   - Frontend tasks → [HanzoStudio_Frontend](https://www.notion.so/HanzoStudio_Frontend-5fe8e9b691a14389bc25af1e2fc25982?pvs=21)
    - Desktop tasks → [Comfy Desktop Next](https://www.notion.so/Comfy-Desktop-Next-1f96d73d365080d98d86dd109c0221e6?pvs=21)
    - Core/Backend tasks → Appropriate backend project
    

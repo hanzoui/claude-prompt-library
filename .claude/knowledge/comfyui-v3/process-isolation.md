@@ -1,6 +1,6 @@
 # Process Isolation with pyisolate
 
-Process isolation enables ComfyUI nodes to run in separate Python processes with their own dependencies, solving the dependency conflict problem while maintaining seamless communication.
+Process isolation enables Hanzo Studio nodes to run in separate Python processes with their own dependencies, solving the dependency conflict problem while maintaining seamless communication.
 
 ## Overview
 
@@ -15,7 +15,7 @@ pyisolate provides:
 
 ```
 ┌─────────────────────┐     RPC      ┌─────────────┐
-│  ComfyUI Host       │◄────────────►│   Node A    │
+│  Hanzo Studio Host       │◄────────────►│   Node A    │
 │                     │              │ (numpy 1.x) │
 │  ┌──────────────┐   │              └─────────────┘
 │  │Model Manager │   │     RPC      ┌─────────────┐
@@ -24,7 +24,7 @@ pyisolate provides:
 └─────────────────────┘              └─────────────┘
 ```
 
-## Integration with ComfyUI v3
+## Integration with Hanzo Studio v3
 
 ### 1. Node as Extension
 
@@ -37,7 +37,7 @@ from pyisolate import ExtensionBase
 
 class MyNodeExtension(ExtensionBase):
     def on_module_loaded(self, module):
-        # Register nodes with ComfyUI
+        # Register nodes with Hanzo Studio
         self.nodes = {
             "MyNode": MyNode,
             "MyOtherNode": MyOtherNode
@@ -65,7 +65,7 @@ share_torch: true  # Enable tensor sharing
 
 ### 3. Node Registration
 
-Modified node loading in ComfyUI:
+Modified node loading in Hanzo Studio:
 
 ```python
 async def load_custom_node_v3(module_path):
@@ -180,7 +180,7 @@ ExtensionConfig(
 ## Benefits
 
 ### Stability
-- Node crashes don't affect ComfyUI
+- Node crashes don't affect Hanzo Studio
 - Memory leaks isolated
 - Clean shutdown of misbehaving nodes
 
@@ -206,7 +206,7 @@ ExtensionConfig(
 - ✅ RPC system with async support
 - ✅ PyTorch tensor sharing
 - ✅ Virtual environment management
-- 🚧 ComfyUI integration design
+- 🚧 Hanzo Studio integration design
 - 📋 Node manifest specification
 - 📋 Proxy node system
 - 📋 Migration tools

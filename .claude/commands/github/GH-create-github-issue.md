@@ -10,13 +10,13 @@ For this task: $ARGUMENTS
    - Note required fields, formatting guidelines, and labels
 
 2. **Read Core Documentation:**
-   - https://deepwiki.com/comfyanonymous/ComfyUI (core ComfyUI)
-   - https://deepwiki.com/Comfy-Org/ComfyUI_frontend (frontend architecture)
-   - https://deepwiki.com/Comfy-Org/ComfyUI-Manager (custom node manager)
-   - https://deepwiki.com/Comfy-Org/litegraph.js (graph canvas system)
+   - https://deepwiki.com/hanzoai/studio (core Hanzo Studio)
+   - https://deepwiki.com/hanzoui/studio_frontend (frontend architecture)
+   - https://deepwiki.com/hanzoui/studio-Manager (custom node manager)
+   - https://deepwiki.com/hanzoui/litegraph.js (graph canvas system)
    - ~/projects/comfy-testing-environment/
-   - ~/projects/comfyui-frontend-testing/
-   - ~/projects/comfyui-frontend-testing/docs/
+   - ~/projects/hanzo-studio-frontend-testing/
+   - ~/projects/hanzo-studio-frontend-testing/docs/
 
 3. **Read Repository Documentation**
    - Look for deepwikis, CONTRIBUTING.md, or other relevant docs
@@ -34,7 +34,7 @@ For this task: $ARGUMENTS
 ## Visual Documentation (if needed)
 
 If screenshots would help illustrate the issue:
-- Tell me to start ComfyUI in a separate process
+- Tell me to start Hanzo Studio in a separate process
 - Once I confirm it's running, navigate to localhost:8188
 - Take relevant screenshots of the issue/feature request
 

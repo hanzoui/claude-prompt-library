@@ -1,6 +1,6 @@
-# ComfyUI v3 Initiative
+# Hanzo Studio v3 Initiative
 
-This knowledge base documents the ComfyUI v3 initiative, a major architectural overhaul aimed at improving the custom node experience through better dependency management, modern APIs, and scalable execution.
+This knowledge base documents the Hanzo Studio v3 initiative, a major architectural overhaul aimed at improving the custom node experience through better dependency management, modern APIs, and scalable execution.
 
 ## Overview
 
@@ -34,6 +34,6 @@ The v3 initiative consists of three interconnected components:
 
 ## Resources
 
-- Blog Post: [Dependency Resolution and Custom Node Standards](https://blog.comfy.org/dependency-resolution-and-custom-node-standards)
+- Blog Post: [Dependency Resolution and Custom Node Standards](https://blog.hanzo.ai/dependency-resolution-and-custom-node-standards)
 - Discord: #exclusive-custom-node-devs channel
-- GitHub: [ComfyUI Repository](https://github.com/comfyanonymous/ComfyUI)
+- GitHub: [Hanzo Studio Repository](https://github.com/hanzoai/studio)

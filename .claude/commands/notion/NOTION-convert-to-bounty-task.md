@@ -1,6 +1,6 @@
 # Convert Task to Bounty Task
 
-Your task is to convert the following task into a properly structured bounty task following the ComfyUI bounty process: $ARGUMENTS
+Your task is to convert the following task into a properly structured bounty task following the Hanzo Studio bounty process: $ARGUMENTS
 
 ## Process Overview
 
@@ -15,7 +15,7 @@ First, determine if this is a **Task** or **Project**:
 
 For **Tasks**:
 1. **Create the task** under the appropriate project in [Tasks](https://www.notion.so/bf086637f74c4292ae588ab84ff18550?pvs=21):
-   - Frontend tasks → [ComfyUI_Frontend](https://www.notion.so/ComfyUI_Frontend-5fe8e9b691a14389bc25af1e2fc25982?pvs=21)
+   - Frontend tasks → [Hanzo Studio_Frontend](https://www.notion.so/Hanzo Studio_Frontend-5fe8e9b691a14389bc25af1e2fc25982?pvs=21)
    - Desktop tasks → [Comfy Desktop Next](https://www.notion.so/Comfy-Desktop-Next-1f96d73d365080d98d86dd109c0221e6?pvs=21)
    - Core/Backend tasks → Appropriate backend project
    
@@ -53,27 +53,27 @@ Create a well-structured bounty task with these sections:
 
 ## Context & Resources
 
-### ComfyUI Ecosystem Resources:
-- **Main Repository**: [ComfyUI GitHub](https://github.com/comfyanonymous/ComfyUI)
-- **Frontend Repository**: [ComfyUI Frontend](https://github.com/Comfy-Org/ComfyUI_frontend)
-- **ComfyUI CLI**: [Comfy CLI](https://github.com/Comfy-Org/comfy-cli)
-- **ComfyUI Desktop**: [Desktop App](https://github.com/Comfy-Org/desktop)
-- **Documentation**: [ComfyUI Docs](https://docs.comfy.org/)
-- **Node Registry**: [ComfyUI Registry](https://registry.comfy.org/)
-- **Example Workflows**: [Example Workflows](https://github.com/Comfy-Org/example_workflows)
-- **Community**: [ComfyUI Discord](https://discord.com/invite/comfyorg)
+### Hanzo Studio Ecosystem Resources:
+- **Main Repository**: [Hanzo Studio GitHub](https://github.com/hanzoai/studio)
+- **Frontend Repository**: [Hanzo Frontend](https://github.com/hanzoui/studio_frontend)
+- **Hanzo Studio CLI**: [Comfy CLI](https://github.com/hanzoui/cli)
+- **Hanzo Desktop**: [Desktop App](https://github.com/hanzoui/desktop)
+- **Documentation**: [Hanzo Studio Docs](https://docs.hanzo.ai/)
+- **Node Registry**: [Hanzo Registry](https://registry.hanzo.ai/)
+- **Example Workflows**: [Example Workflows](https://github.com/hanzoui/example-workflows)
+- **Community**: [Hanzo Studio Discord](https://discord.com/invite/hanzoai)
 
 ### Bounty Management:
 - **Internal View**: [Bounty Tasks View (Internal)](https://www.notion.so/Bounty-Tasks-View-Internal-2006d73d365080eaae35edac894860c9?pvs=21)
-- **Public View**: [ComfyUI Bounty Tasks](https://www.notion.so/ComfyUI-Bounty-Tasks-1fb6d73d36508064af76d05b3f35665f?pvs=21)
+- **Public View**: [Hanzo Studio Bounty Tasks](https://www.notion.so/Hanzo Studio-Bounty-Tasks-1fb6d73d36508064af76d05b3f35665f?pvs=21)
 
 ### Technical Guidelines:
-- **Installation Guide**: [System Requirements](https://docs.comfy.org/installation/system_requirements)
-- **Development Overview**: [Development Guide](https://docs.comfy.org/development/overview)
-- **Frontend Development**: [Frontend Repository](https://github.com/Comfy-Org/ComfyUI_frontend)
-- **Core Backend**: [Main Repository](https://github.com/comfyanonymous/ComfyUI)
-- **CLI Tools**: [Comfy CLI](https://github.com/Comfy-Org/comfy-cli)
-- **Desktop App**: [Desktop Repository](https://github.com/Comfy-Org/desktop)
+- **Installation Guide**: [System Requirements](https://docs.hanzo.ai/installation/system_requirements)
+- **Development Overview**: [Development Guide](https://docs.hanzo.ai/development/overview)
+- **Frontend Development**: [Frontend Repository](https://github.com/hanzoui/studio_frontend)
+- **Core Backend**: [Main Repository](https://github.com/hanzoai/studio)
+- **CLI Tools**: [Comfy CLI](https://github.com/hanzoui/cli)
+- **Desktop App**: [Desktop Repository](https://github.com/hanzoui/desktop)
 
 ## Best Practices & Tips
 
@@ -119,7 +119,7 @@ Create a well-structured bounty task with these sections:
   - Search history (last 5 searches)
 - **Skills Required**: JavaScript, Vue.js, CSS
 - **Estimated Effort**: 8-12 hours
-- **Resources**: [Frontend Repository](https://github.com/Comfy-Org/ComfyUI_frontend), [JS Extensions Guide](https://docs.comfy.org/custom-nodes/js/javascript_overview)
+- **Resources**: [Frontend Repository](https://github.com/hanzoui/studio_frontend), [JS Extensions Guide](https://docs.hanzo.ai/custom-nodes/js/javascript_overview)
 
 ### Example 2: Node Development
 **Original**: "Need better image processing"
@@ -131,9 +131,9 @@ Create a well-structured bounty task with these sections:
   - Each node with parameter controls and real-time preview
   - Comprehensive documentation and examples
   - Unit tests for each node
-- **Skills Required**: Python, Image Processing (PIL/OpenCV), ComfyUI Core API
+- **Skills Required**: Python, Image Processing (PIL/OpenCV), Hanzo Studio Core API
 - **Estimated Effort**: 20-30 hours
-- **Resources**: [Core Repository](https://github.com/comfyanonymous/ComfyUI), [Development Overview](https://docs.comfy.org/development/overview)
+- **Resources**: [Core Repository](https://github.com/hanzoai/studio), [Development Overview](https://docs.hanzo.ai/development/overview)
 
 ## Validation Checklist
 
@@ -161,4 +161,4 @@ After creating the bounty task:
 
 ---
 
-**Note**: This command follows the official ComfyUI bounty process. Always ensure tasks meet quality standards and provide clear value to the community before publishing.
+**Note**: This command follows the official Hanzo Studio bounty process. Always ensure tasks meet quality standards and provide clear value to the community before publishing.

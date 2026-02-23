@@ -1,4 +1,4 @@
-# VALIDATE_INPUTS in ComfyUI
+# VALIDATE_INPUTS in Hanzo Studio
 
 ## Overview
 

@@ -1,13 +1,13 @@
-# ComfyUI Website Platform - Repository Analysis Guide
+# Hanzo Studio Website Platform - Repository Analysis Guide
 
 ## Repository Overview
 
-**Repository**: ComfyUI Website Platform  
-**Location**: `~/projects/comfyui-frontend-testing/website/`  
-**Purpose**: Web platform for ComfyUI API key management and user dashboard  
+**Repository**: Hanzo Studio Website Platform  
+**Location**: `~/projects/hanzo-studio-frontend-testing/website/`  
+**Purpose**: Web platform for Hanzo Studio API key management and user dashboard  
 **Primary Function**: Allows users to authenticate, manage API keys, view usage logs, and update profile information  
 
-The ComfyUI Website is the official web dashboard for managing API keys that integrate with ComfyUI's AI workflow platform. It provides users with secure authentication, API key lifecycle management, and usage monitoring capabilities.
+The Hanzo Studio Website is the official web dashboard for managing API keys that integrate with Hanzo Studio's AI workflow platform. It provides users with secure authentication, API key lifecycle management, and usage monitoring capabilities.
 
 ## Technology Stack
 
@@ -48,7 +48,7 @@ website/
 ├── assets/                    # Static assets (CSS, fonts, images)
 │   ├── css/                  # Global styles (main.css, inter.css)
 │   ├── fonts/                # Inter font family files
-│   └── images/               # ComfyUI logos and brand assets
+│   └── images/               # Hanzo Studio logos and brand assets
 ├── components/               # Vue components
 │   ├── forms/                # Authentication form components
 │   └── *.vue                # Feature-specific components
@@ -305,4 +305,4 @@ sudo chown -R $(whoami):$(whoami) .nuxt
 - **Middleware** for cross-cutting concerns
 - **Component separation** between presentation and logic
 
-This guide provides the foundation for understanding and extending the ComfyUI Website platform, with emphasis on maintaining code quality, security, and user experience standards.
+This guide provides the foundation for understanding and extending the Hanzo Studio Website platform, with emphasis on maintaining code quality, security, and user experience standards.

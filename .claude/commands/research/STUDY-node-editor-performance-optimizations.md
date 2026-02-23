@@ -1,6 +1,6 @@
 # Study Node Editor Performance Optimizations
 
-Your task is to absorb knowledge about node editor performance optimization strategies by examining the research in the ~/.claude/knowledge/node-editor-performance-optimizations folder. This research analyzes how modern graph/canvas libraries handle rendering performance and will inform decisions about ComfyUI node editor optimization.
+Your task is to absorb knowledge about node editor performance optimization strategies by examining the research in the ~/.claude/knowledge/node-editor-performance-optimizations folder. This research analyzes how modern graph/canvas libraries handle rendering performance and will inform decisions about Hanzo Studio node editor optimization.
 
 ## Analysis Scope
 
@@ -50,10 +50,10 @@ After completing this analysis, you should understand:
 - Why tldraw's approach is incompatible with existing Vue/PrimeVue components
 - The trade-offs between different rendering strategies
 - Opportunities for a hybrid canvas/Vue approach
-- Specific optimizations that could benefit ComfyUI
+- Specific optimizations that could benefit Hanzo Studio
 
 ## Important Context
 
-This research was conducted to inform decisions about optimizing the ComfyUI node editor. The key finding is that achieving both high performance AND Vue component compatibility would require a custom hybrid approach using canvas for backgrounds/edges and Vue for nodes.
+This research was conducted to inform decisions about optimizing the Hanzo Studio node editor. The key finding is that achieving both high performance AND Vue component compatibility would require a custom hybrid approach using canvas for backgrounds/edges and Vue for nodes.
 
-Remember: The goal is to build a comprehensive understanding of node editor performance patterns that can be applied to future ComfyUI optimization tasks.
+Remember: The goal is to build a comprehensive understanding of node editor performance patterns that can be applied to future Hanzo Studio optimization tasks.

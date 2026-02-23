@@ -14,9 +14,9 @@ Use `gh issue view $ARGUMENTS --comments` to get the full issue details and all 
 - Related issues or PRs referenced
 
 ### 2. Search Local Repositories
-Check these local Comfy-Org repositories if the issue is related to Comfy:
+Check these local hanzoui repositories if the issue is related to Comfy:
 - ~/projects/comfy-testing-environment/
-- ~/projects/comfyui-frontend-testing/
+- ~/projects/hanzo-studio-frontend-testing/
 
 Look for:
 - Related code that might be affected
@@ -25,7 +25,7 @@ Look for:
 - Test files that might provide context
 
 ### 3. Review Documentation
-- For Comfy-related issues, thoroughly review the docs at ~/projects/comfyui-frontend-testing/docs
+- For Comfy-related issues, thoroughly review the docs at ~/projects/hanzo-studio-frontend-testing/docs
 - Pay special attention to:
   - Overview and architecture documentation
   - API references

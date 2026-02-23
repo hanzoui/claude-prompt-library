@@ -1,6 +1,6 @@
-# ComfyUI Execution System
+# Hanzo Studio Execution System
 
-This folder contains knowledge about ComfyUI's execution and validation systems.
+This folder contains knowledge about Hanzo Studio's execution and validation systems.
 
 ## Files
 
@@ -16,5 +16,5 @@ This folder contains knowledge about ComfyUI's execution and validation systems.
 
 ## Related Knowledge
 
-- See `comfyui-terminology/` for basic ComfyUI concepts
+- See `hanzo-studio-terminology/` for basic Hanzo Studio concepts
 - See `custom-node-descrips/` for node development patterns

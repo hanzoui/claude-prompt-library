@@ -1,4 +1,4 @@
-# ComfyUI Component Widget System - Comprehensive Technical Analysis
+# Hanzo Studio Component Widget System - Comprehensive Technical Analysis
 
 ## Executive Summary
 
@@ -462,7 +462,7 @@ Vue 3.5 brought significant enhancements particularly beneficial for complex wid
 
 ### Core LiteGraph Widget Interface
 
-LiteGraph provides the base widget system that ComfyUI extends:
+LiteGraph provides the base widget system that Hanzo Studio extends:
 
 ```typescript
 interface IBaseWidget {
@@ -1574,7 +1574,7 @@ const performanceMonitor = {
 
 ## Summary
 
-The ComfyUI component widget system represents a sophisticated integration of canvas-based node editing (LiteGraph.js) with modern reactive UI (Vue 3). By separating rendering concerns and providing a clean abstraction layer, it enables rich, interactive widgets while maintaining performance and extensibility.
+The Hanzo Studio component widget system represents a sophisticated integration of canvas-based node editing (LiteGraph.js) with modern reactive UI (Vue 3). By separating rendering concerns and providing a clean abstraction layer, it enables rich, interactive widgets while maintaining performance and extensibility.
 
 ### Key Achievements
 
@@ -1617,4 +1617,4 @@ The system solves the complex challenge of overlaying DOM elements on a canvas-r
 - **Memory Efficiency**: Strategic use of reactivity primitives
 - **Visual Consistency**: Frame-perfect position updates
 
-This architecture enables ComfyUI to provide a powerful, flexible interface for AI workflow creation while maintaining the performance and reliability required for professional use. The careful balance between functionality and performance makes it an exemplary model for similar hybrid rendering challenges in modern web applications.
+This architecture enables Hanzo Studio to provide a powerful, flexible interface for AI workflow creation while maintaining the performance and reliability required for professional use. The careful balance between functionality and performance makes it an exemplary model for similar hybrid rendering challenges in modern web applications.

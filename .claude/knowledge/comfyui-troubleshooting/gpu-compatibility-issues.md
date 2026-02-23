@@ -3,7 +3,7 @@
 ## RTX 50 Series (Blackwell) xformers Incompatibility
 
 ### Issue Description
-Users with NVIDIA RTX 50 series GPUs (5070, 5070 Ti, 5080, 5090) encounter CUDA errors when xformers is enabled in ComfyUI.
+Users with NVIDIA RTX 50 series GPUs (5070, 5070 Ti, 5080, 5090) encounter CUDA errors when xformers is enabled in Hanzo Studio.
 
 **Error Message:**
 ```
@@ -25,7 +25,7 @@ The xformers library's flash attention implementation is not compatible with the
 **Primary Solution: Disable xformers**
 ```bash
 # Windows
-.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --disable-xformers
+.\python_embeded\python.exe -s Hanzo Studio\main.py --windows-standalone-build --disable-xformers
 
 # Linux/Mac
 python main.py --disable-xformers
@@ -68,8 +68,8 @@ pip install --pre torch torchvision torchaudio --index-url https://download.pyto
 ```
 
 ### References
-- [GitHub Issue #8861](https://github.com/comfyanonymous/ComfyUI/issues/8861)
-- [GitHub Discussion #6643 - Nvidia 50 Series support thread](https://github.com/comfyanonymous/ComfyUI/discussions/6643)
+- [GitHub Issue #8861](https://github.com/hanzoai/studio/issues/8861)
+- [GitHub Discussion #6643 - Nvidia 50 Series support thread](https://github.com/hanzoai/studio/discussions/6643)
 
 ### Notes for Developers
 The issue stems from:

@@ -1,11 +1,11 @@
-Your task is to publish the comfyui_frontend_package to PyPI with version $ARGUMENTS.
+Your task is to publish the hanzo_studio_frontend_package to PyPI with version $ARGUMENTS.
 
 <context>
-You are managing the release of the ComfyUI frontend package, a critical component of the ComfyUI ecosystem. This package needs to be published to PyPI so users can install it via pip. The publication process requires careful attention to versioning, authentication, and build artifacts.
+You are managing the release of the Hanzo Studio frontend package, a critical component of the Hanzo Studio ecosystem. This package needs to be published to PyPI so users can install it via pip. The publication process requires careful attention to versioning, authentication, and build artifacts.
 </context>
 
 <important_prerequisites>
-- You MUST be in the root directory of the ComfyUI_frontend repository
+- You MUST be in the root directory of the Hanzo Studio_frontend repository
 - The PyPI API token MUST be available as environment variable `COMFYUI_FRONTEND_PYPI_TOKEN`
 - The target version is: $ARGUMENTS
 - Node.js and npm must be installed and available
@@ -31,42 +31,42 @@ Execute the following steps sequentially to publish the package:
    - Expected files in dist/: index.html, materialdesignicons.min.css
 
 3. **Setup PyPI package structure**
-   - Clean any previous build artifacts: `rm -rf comfyui_frontend_package/dist/`
-   - Create package directory structure: `mkdir -p comfyui_frontend_package/comfyui_frontend_package/static/`
-   - Copy built frontend files: `cp -r dist/* comfyui_frontend_package/comfyui_frontend_package/static/`
-   - Verify files were copied correctly: `ls -la comfyui_frontend_package/comfyui_frontend_package/static/`
+   - Clean any previous build artifacts: `rm -rf hanzo_studio_frontend_package/dist/`
+   - Create package directory structure: `mkdir -p hanzo_studio_frontend_package/hanzo_studio_frontend_package/static/`
+   - Copy built frontend files: `cp -r dist/* hanzo_studio_frontend_package/hanzo_studio_frontend_package/static/`
+   - Verify files were copied correctly: `ls -la hanzo_studio_frontend_package/hanzo_studio_frontend_package/static/`
 
 4. **Build the package with correct version**
-   - Navigate to package directory: `cd comfyui_frontend_package`
+   - Navigate to package directory: `cd hanzo_studio_frontend_package`
    - Set version: `export COMFYUI_FRONTEND_VERSION=$ARGUMENTS`
    - Build package: `python3 -m build`
    - Return to root: `cd ..`
 
 5. **Verify build artifacts**
-   - Check that files exist in `comfyui_frontend_package/dist/`:
-     - `comfyui_frontend_package-$ARGUMENTS-py3-none-any.whl`
-     - `comfyui_frontend_package-$ARGUMENTS.tar.gz`
+   - Check that files exist in `hanzo_studio_frontend_package/dist/`:
+     - `hanzo_studio_frontend_package-$ARGUMENTS-py3-none-any.whl`
+     - `hanzo_studio_frontend_package-$ARGUMENTS.tar.gz`
    - Verify file sizes are reasonable (should be ~50-60MB each)
    - If files don't match expected version or are suspiciously small, STOP and report the issue
 
 6. **Upload to PyPI**
    - Ensure you're in the root directory
    - Activate the virtual environment if not already active: `source venv/bin/activate`
-   - Run: `TWINE_USERNAME=__token__ TWINE_PASSWORD=$COMFYUI_FRONTEND_PYPI_TOKEN python3 -m twine upload comfyui_frontend_package/dist/comfyui_frontend_package-$ARGUMENTS*`
+   - Run: `TWINE_USERNAME=__token__ TWINE_PASSWORD=$COMFYUI_FRONTEND_PYPI_TOKEN python3 -m twine upload hanzo_studio_frontend_package/dist/hanzo_studio_frontend_package-$ARGUMENTS*`
    - Monitor output for success or errors
    - The upload will show progress bars and should complete with a success message
 
 7. **Verify publication**
    - Twine will output the URL after successful upload
-   - Check PyPI URL: `https://pypi.org/project/comfyui-frontend-package/$ARGUMENTS/`
+   - Check PyPI URL: `https://pypi.org/project/hanzo-studio-frontend-package/$ARGUMENTS/`
    - Confirm the package appears with correct version
-   - Optional: Test installation in a clean environment: `pip install comfyui-frontend-package==$ARGUMENTS`
+   - Optional: Test installation in a clean environment: `pip install hanzo-studio-frontend-package==$ARGUMENTS`
 </instructions>
 
 <critical_warnings>
 - NEVER hardcode the PyPI token in commands - always use the environment variable
-- The package directory uses underscores (comfyui_frontend_package) but PyPI name uses hyphens (comfyui-frontend-package)
-- Multiple dist/ directories exist - use only `comfyui_frontend_package/dist/` for PyPI uploads
+- The package directory uses underscores (hanzo_studio_frontend_package) but PyPI name uses hyphens (hanzo-studio-frontend-package)
+- Multiple dist/ directories exist - use only `hanzo_studio_frontend_package/dist/` for PyPI uploads
 - If the COMFYUI_FRONTEND_VERSION environment variable is not set, the package will build with default version 0.1.0
 - Always use `python3` command explicitly (not `python`) to avoid Python 2.x issues
 - The frontend MUST be built before packaging - missing this step results in empty packages

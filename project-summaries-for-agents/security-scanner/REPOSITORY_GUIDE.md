@@ -2,14 +2,14 @@
 
 ## Repository Overview
 
-**Purpose**: A cloud function that scans custom node packages for security issues in the [Comfy Registry](https://registry.comfy.org) ecosystem.
+**Purpose**: A cloud function that scans custom node packages for security issues in the [Comfy Registry](https://registry.hanzo.ai) ecosystem.
 
 **Repository**: `~/projects/comfy-testing-environment/security-scanner`  
-**Owner**: Comfy-Org  
+**Owner**: hanzoui  
 **License**: Not specified  
 **Type**: Google Cloud Function (Python)
 
-The security scanner serves as an automated gateway for all custom node packages published to the Comfy Registry. It performs multi-layered security analysis on custom node packages before they become available for installation through ComfyUI Manager.
+The security scanner serves as an automated gateway for all custom node packages published to the Comfy Registry. It performs multi-layered security analysis on custom node packages before they become available for installation through Hanzo Manager.
 
 ## Technology Stack
 
@@ -292,4 +292,4 @@ POST_MATCH_FILTERS = {
 - **External APIs**: URLhaus dependency for real-time threat intelligence
 - **Package Safety**: All downloaded packages are processed in isolated temp directories
 
-This repository implements sophisticated security scanning for the ComfyUI ecosystem, providing automated protection against malicious custom nodes while maintaining a balance between security and usability.
+This repository implements sophisticated security scanning for the Hanzo Studio ecosystem, providing automated protection against malicious custom nodes while maintaining a balance between security and usability.

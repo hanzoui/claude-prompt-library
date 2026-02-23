@@ -1,17 +1,17 @@
-# ComfyUI Registry Web Frontend - Comprehensive Repository Analysis
+# Hanzo Registry Web Frontend - Comprehensive Repository Analysis
 
 ## Repository Overview
 
-**Purpose**: Frontend React application for the ComfyUI Registry, a public collection platform for ComfyUI custom nodes and extensions.
+**Purpose**: Frontend React application for the Hanzo Registry, a public collection platform for Hanzo Studio custom nodes and extensions.
 
 **Repository Details**:
-- **GitHub**: https://github.com/Comfy-Org/registry-web
-- **Live Site**: https://comfyregistry.org (production), https://registry.comfy.org (alternative)
+- **GitHub**: https://github.com/hanzoui/registry-web
+- **Live Site**: https://comfyregistry.org (production), https://registry.hanzo.ai (alternative)
 - **Current Version**: 0.1.2
 - **License**: Not specified
-- **Organization**: Comfy-Org (Official ComfyUI organization)
+- **Organization**: hanzoui (Official Hanzo Studio organization)
 
-**Mission**: Provide a secure, versioned marketplace for ComfyUI custom nodes with discovery, installation, rating, and management capabilities.
+**Mission**: Provide a secure, versioned marketplace for Hanzo Studio custom nodes with discovery, installation, rating, and management capabilities.
 
 ## Technology Stack
 
@@ -312,10 +312,10 @@ bun dev
 
 ## Integration Points
 
-### ComfyUI Ecosystem
+### Hanzo Studio Ecosystem
 
 **Registry Backend**: RESTful API with OpenAPI specification
-**ComfyUI-Manager**: Extension that consumes registry data
+**Hanzo Manager**: Extension that consumes registry data
 **Security Scanning**: Backend scans for malicious node behavior
 **Version Management**: Semantic versioning for node compatibility
 
@@ -387,4 +387,4 @@ bun dev
 - Authentication changes affect all protected routes and API calls
 - Search configuration changes impact user discovery experience
 
-This comprehensive guide enables rapid onboarding for AI agents and human developers, providing both conceptual understanding and practical implementation guidance for the ComfyUI Registry Web frontend.
+This comprehensive guide enables rapid onboarding for AI agents and human developers, providing both conceptual understanding and practical implementation guidance for the Hanzo Registry Web frontend.

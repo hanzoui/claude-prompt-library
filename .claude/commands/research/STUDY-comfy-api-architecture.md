@@ -1,6 +1,6 @@
 Please read the following architecture overview for the comfy-api repo and use as a guide for following tasks (will explain later after you have finished reading):
 
-# ComfyUI Registry Backend - Architecture Overview
+# Hanzo Registry Backend - Architecture Overview
 
 ## 🎓 Backend Development Fundamentals
 
@@ -54,7 +54,7 @@ type Node struct {
 #### **Service-Oriented Architecture**
 - **Business Logic Layer**: Pure functions that operate on domain entities (see `services/`)
 
-> **📖 Business Logic Explained**: Business logic is the core rules and workflows that make your application unique - not the technical plumbing. For ComfyUI Registry, business logic includes "a node must pass security scanning before publication" or "publishers can only edit their own nodes." It's the domain knowledge that would exist even if you switched from PostgreSQL to MongoDB or from HTTP to GraphQL. Keeping business logic separate from database/HTTP code makes it testable and reusable.
+> **📖 Business Logic Explained**: Business logic is the core rules and workflows that make your application unique - not the technical plumbing. For Hanzo Registry, business logic includes "a node must pass security scanning before publication" or "publishers can only edit their own nodes." It's the domain knowledge that would exist even if you switched from PostgreSQL to MongoDB or from HTTP to GraphQL. Keeping business logic separate from database/HTTP code makes it testable and reusable.
 
 - **Data Access Layer**: Database queries abstracted behind interfaces (see `ent/`)
 - **Integration Layer**: External service calls (Stripe, Algolia) isolated for testing (see `gateways/`)
@@ -86,12 +86,12 @@ type Node struct {
 
 ## Executive Summary
 
-The ComfyUI Registry Backend is a sophisticated **Go-based microservice** that powers the [ComfyUI Registry](https://registry.comfy.org) and [ComfyUI CI/CD](https://ci.comfy.org) platforms. It serves as the central hub for managing custom ComfyUI node packs, handling API proxying for multiple AI services, and providing a complete developer ecosystem for the ComfyUI community.
+The Hanzo Registry Backend is a sophisticated **Go-based microservice** that powers the [Hanzo Registry](https://registry.hanzo.ai) and [Hanzo Studio CI/CD](https://ci.hanzo.ai) platforms. It serves as the central hub for managing custom Hanzo Studio node packs, handling API proxying for multiple AI services, and providing a complete developer ecosystem for the Hanzo Studio community.
 
 **Key Functions:**
-- 🎨 **Node Registry**: Manages 1000+ custom ComfyUI node packages with versioning, reviews, and discovery
+- 🎨 **Node Registry**: Manages 1000+ custom Hanzo Studio node packages with versioning, reviews, and discovery
 - 🔌 **API Proxy**: Unified gateway to 15+ AI APIs (OpenAI, Stability, Runway, etc.) with billing aggregation  
-- 🚀 **CI/CD Platform**: Automated testing and deployment for ComfyUI extensions
+- 🚀 **CI/CD Platform**: Automated testing and deployment for Hanzo Studio extensions
 - 💳 **Billing & Usage**: Integrated Stripe/Metronome for usage-based pricing across services
 - 🔍 **Search & Discovery**: Algolia-powered search with intelligent categorization
 
@@ -103,8 +103,8 @@ The ComfyUI Registry Backend is a sophisticated **Go-based microservice** that p
 graph TB
     subgraph "Client Layer"
         WEB[Registry Web Frontend]
-        CLI[ComfyUI CLI]
-        CUI[ComfyUI Desktop App]
+        CLI[Hanzo Studio CLI]
+        CUI[Hanzo Desktop App]
         API_CLIENTS[API Clients]
     end
 
@@ -474,7 +474,7 @@ erDiagram
 ## 🚀 Service Architecture Deep Dive
 
 ### Registry Service (`services/registry/`)
-**Primary Function**: Manages the ComfyUI node ecosystem
+**Primary Function**: Manages the Hanzo Studio node ecosystem
 
 **Key Responsibilities:**
 - Node publishing, versioning, and lifecycle management
@@ -730,7 +730,7 @@ The system follows an **OpenAPI 3.0 specification-driven** approach:
 
 ```mermaid
 sequenceDiagram
-    participant Client as ComfyUI Client
+    participant Client as Hanzo Studio Client
     participant Proxy as API Proxy
     participant Auth as Authentication
     participant Billing as Billing Service

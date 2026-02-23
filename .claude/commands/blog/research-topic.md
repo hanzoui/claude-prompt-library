@@ -11,7 +11,7 @@ This is an interactive process where we'll work together to gather all relevant 
 
 The topic can span multiple projects or be a cross-cutting concern. Examples:
 - Single topic: "implementing-vim-mode"
-- Multi-project: "state-management-patterns, vue-node-system, comfyui-frontend"
+- Multi-project: "state-management-patterns, vue-node-system, hanzo-studio-frontend"
 - Cross-cutting: "performance-optimization across our stack"
 </task>
 
@@ -140,7 +140,7 @@ The topic can span multiple projects or be a cross-cutting concern. Examples:
 Topic: "implementing-vim-mode"
 
 Research Summary might include:
-- Sources: vim-mode PRs #123-145, ~/.claude/knowledge/comfyui-vim, README files
+- Sources: vim-mode PRs #123-145, ~/.claude/knowledge/hanzo-studio-vim, README files
 - Key Achievement: Full vim keybinding support in visual editor
 - Problems: Conflicting keybindings, state management complexity
 - Angles: 1) State machine design story, 2) User request to implementation

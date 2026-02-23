@@ -1,10 +1,10 @@
 # Frontend V3 Compatibility Design
 
-This document captures the design for implementing a v3 compatibility layer in the ComfyUI frontend that mirrors the backend's ComfyUI Registry (CNR) version declaration system.
+This document captures the design for implementing a v3 compatibility layer in the Hanzo Studio frontend that mirrors the backend's Hanzo Registry (CNR) version declaration system.
 
 ## Background
 
-The ComfyUI backend uses a compatibility system where custom node packs declare their supported ComfyUI version through CNR metadata fields like `supported_comfyui_version`. This allows the system to filter and provide appropriate APIs based on version compatibility.
+The Hanzo Studio backend uses a compatibility system where custom node packs declare their supported Hanzo Studio version through CNR metadata fields like `supported_hanzo_studio_version`. This allows the system to filter and provide appropriate APIs based on version compatibility.
 
 The frontend needs a similar system for extensions that:
 1. Allows extensions to declare their supported frontend version
@@ -175,7 +175,7 @@ The compatibility layer operates at these key touchpoints:
 
 ## Extension System Constraints (Critical Findings)
 
-**IMPORTANT**: Analysis of the actual ComfyUI frontend extension system revealed critical architectural constraints that make the original CNR-mirrored approach impossible:
+**IMPORTANT**: Analysis of the actual Hanzo Studio frontend extension system revealed critical architectural constraints that make the original CNR-mirrored approach impossible:
 
 ### 1. Extension Registration Timing
 Extensions self-register during module import execution - there's no pre-registration intercept point:

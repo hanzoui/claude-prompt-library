@@ -7,9 +7,9 @@ Based on my comprehensive analysis of the codebase, here's a detailed technical 
 ### Core Event System Architecture
 The subgraph event system is built on a **hierarchical type-safe architecture** with three primary event map interfaces:
 
-- **`SubgraphEventMap`** (`/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/infrastructure/SubgraphEventMap.ts`) - Extends `LGraphEventMap` with subgraph-specific events
-- **`LGraphEventMap`** (`/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/infrastructure/LGraphEventMap.ts`) - Core graph events
-- **`LinkConnectorEventMap`** (`/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/infrastructure/LinkConnectorEventMap.ts`) - Link connection events
+- **`SubgraphEventMap`** (`/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/infrastructure/SubgraphEventMap.ts`) - Extends `LGraphEventMap` with subgraph-specific events
+- **`LGraphEventMap`** (`/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/infrastructure/LGraphEventMap.ts`) - Core graph events
+- **`LinkConnectorEventMap`** (`/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/infrastructure/LinkConnectorEventMap.ts`) - Link connection events
 
 ### TypeScript Type Safety Mechanisms
 
@@ -68,7 +68,7 @@ graph LR
 ## 2. Event Dispatching Internals and Propagation Timing
 
 ### Custom Event Target Implementation
-The system uses a **custom EventTarget wrapper** (`/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/infrastructure/CustomEventTarget.ts`) that:
+The system uses a **custom EventTarget wrapper** (`/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/infrastructure/CustomEventTarget.ts`) that:
 
 ```typescript
 class CustomEventTarget<EventMap> extends EventTarget {

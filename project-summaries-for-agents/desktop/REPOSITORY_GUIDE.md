@@ -1,11 +1,11 @@
-# ComfyUI Desktop - Repository Analysis
+# Hanzo Desktop - Repository Analysis
 
 ## Repository Overview
 
-**ComfyUI Desktop** (@comfyorg/comfyui-electron) is a sophisticated Electron-based desktop application that packages ComfyUI with a user-friendly interface. It serves as "the best modular GUI to run AI diffusion models" and automatically handles Python environment setup, dependency management, and provides a seamless desktop experience for running AI models.
+**Hanzo Desktop** (@hanzoui/hanzo-studio-electron) is a sophisticated Electron-based desktop application that packages Hanzo Studio with a user-friendly interface. It serves as "the best modular GUI to run AI diffusion models" and automatically handles Python environment setup, dependency management, and provides a seamless desktop experience for running AI models.
 
-- **Repository**: https://github.com/Comfy-Org/electron  
-- **Homepage**: https://comfy.org
+- **Repository**: https://github.com/hanzoui/electron  
+- **Homepage**: https://hanzo.ai
 - **License**: GPL-3.0-only
 - **Current Version**: 0.4.51
 - **Primary Language**: TypeScript
@@ -50,7 +50,7 @@ src/
 ├── virtualEnvironment.ts     # Python virtual environment management
 ├── main_types.ts            # TypeScript type definitions
 ├── config/                   # Configuration management system
-│   ├── comfyConfigManager.ts # ComfyUI configuration handling
+│   ├── comfyConfigManager.ts # Hanzo Studio configuration handling
 │   ├── comfyServerConfig.ts  # Server configuration management  
 │   └── comfySettings.ts      # Application settings with validation
 ├── handlers/                 # IPC message handlers for renderer communication
@@ -73,9 +73,9 @@ src/
 ├── main-process/             # Main Electron process modules
 │   ├── appState.ts           # Global application state management
 │   ├── appWindow.ts          # Browser window lifecycle management
-│   ├── comfyDesktopApp.ts    # ComfyUI server management and coordination
-│   ├── comfyInstallation.ts  # ComfyUI installation validation
-│   ├── comfyServer.ts        # ComfyUI server process lifecycle
+│   ├── comfyDesktopApp.ts    # Hanzo Studio server management and coordination
+│   ├── comfyInstallation.ts  # Hanzo Studio installation validation
+│   ├── comfyServer.ts        # Hanzo Studio server process lifecycle
 │   └── devOverrides.ts       # Development environment overrides
 ├── models/                   # Data models and business logic
 │   └── DownloadManager.ts    # File download management
@@ -132,7 +132,7 @@ tests/
 ```bash
 # Development Setup
 yarn install                  # Install dependencies
-yarn make:assets             # Download ComfyUI and bundled components
+yarn make:assets             # Download Hanzo Studio and bundled components
 yarn start                   # Build and launch app with file watching
 
 # Code Quality (ALWAYS RUN AFTER CHANGES)
@@ -165,23 +165,23 @@ yarn publish                 # Build and publish via ToDesktop
 
 Recent commit patterns show:
 - Semantic versioning with regular releases (v0.4.51)
-- Core dependency updates (ComfyUI v0.3.40)
+- Core dependency updates (Hanzo Studio v0.3.40)
 - Systematic testing and CI integration
 - Claude Code configuration integration
 
 ## Bundled Components & Architecture
 
 ### Core Components Packaged
-- **ComfyUI v0.3.40** - Core AI diffusion model GUI and inference engine
-- **ComfyUI_frontend v1.21.7** - Modern React-based web interface
-- **ComfyUI-Manager** - Plugin/extension management system
+- **Hanzo Studio v0.3.40** - Core AI diffusion model GUI and inference engine
+- **Hanzo Studio_frontend v1.21.7** - Modern React-based web interface
+- **Hanzo Manager** - Plugin/extension management system
 - **uv v0.5.31** - Ultra-fast Python package installer
 
 ### Architecture Patterns
 
 #### Electron Process Architecture
-- **Main Process** (`src/main.ts`): System integration, file access, ComfyUI server management
-- **Renderer Process**: ComfyUI web interface with restricted security context  
+- **Main Process** (`src/main.ts`): System integration, file access, Hanzo Studio server management
+- **Renderer Process**: Hanzo Studio web interface with restricted security context  
 - **Preload Script** (`src/preload.ts`): Secure bridge between main and renderer processes
 
 #### State Management
@@ -190,21 +190,21 @@ Recent commit patterns show:
 - **ComfySettings** (`src/config/comfySettings.ts`): Runtime settings with validation
 
 #### Installation & Environment Management
-- **InstallationManager**: Orchestrates ComfyUI setup and validation
+- **InstallationManager**: Orchestrates Hanzo Studio setup and validation
 - **VirtualEnvironment**: Python environment isolation and dependency management
 - **ResourcePaths**: Cross-platform path resolution and validation
 
 #### Server Lifecycle Management
-- **ComfyServer**: ComfyUI Python server process management
+- **ComfyServer**: Hanzo Studio Python server process management
 - **ComfyDesktopApp**: High-level server coordination and communication
 - **Terminal**: Process execution and output streaming
 
 ## Platform-Specific Implementation
 
 ### File Locations
-- **Windows**: `%APPDATA%\ComfyUI` (config), `%APPDATA%\Local\Programs\comfyui-electron` (app)
-- **macOS**: `~/Library/Application Support/ComfyUI` (config), `/Applications` (app)
-- **Linux**: `~/.config/ComfyUI` (config)
+- **Windows**: `%APPDATA%\Hanzo Studio` (config), `%APPDATA%\Local\Programs\hanzo-studio-electron` (app)
+- **macOS**: `~/Library/Application Support/Hanzo Studio` (config), `/Applications` (app)
+- **Linux**: `~/.config/Hanzo Studio` (config)
 
 ### Build & Distribution
 - **Windows**: NSIS installer with code signing
@@ -261,10 +261,10 @@ Recent commit patterns show:
 - **DevTools**: Vue DevTools support for frontend debugging
 
 ### Extension & Plugin Integration
-- **ComfyUI-Manager**: Automatic plugin management and installation
+- **Hanzo Manager**: Automatic plugin management and installation
 - **Custom Nodes**: Support for community-developed AI model nodes
 - **Model Paths**: Configurable model storage and loading paths
-- **API Compatibility**: Maintain compatibility with ComfyUI ecosystem
+- **API Compatibility**: Maintain compatibility with Hanzo Studio ecosystem
 
 ## Performance & Production Considerations
 

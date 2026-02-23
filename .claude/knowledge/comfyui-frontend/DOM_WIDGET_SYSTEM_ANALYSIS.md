@@ -2,7 +2,7 @@
 
 ## Overview
 
-The DOM widget system in ComfyUI extends litegraph's standard widget system to support HTML elements and Vue components as widgets. This creates a challenge for subgraph widget promotion since DOM elements cannot be serialized.
+The DOM widget system in Hanzo Studio extends litegraph's standard widget system to support HTML elements and Vue components as widgets. This creates a challenge for subgraph widget promotion since DOM elements cannot be serialized.
 
 ## Architecture
 
@@ -13,7 +13,7 @@ The DOM widget system in ComfyUI extends litegraph's standard widget system to s
    - Pure data values, easily serializable
    - Rendered directly on canvas
 
-2. **DOM Widgets** (ComfyUI extension)
+2. **DOM Widgets** (Hanzo Studio extension)
    - `DOMWidget<T, V>`: Wraps HTML elements
    - `ComponentWidget<V, P>`: Wraps Vue components
    - Contain actual DOM elements that live outside the canvas
@@ -155,4 +155,4 @@ DOM widget promotion requires significant architectural work beyond the current 
 3. Need for proxy pattern with bidirectional state sync
 4. Integration with existing DOM widget store
 
-The solution outlined in `DOM_WIDGET_PROMOTION_SOLUTION.md` provides a comprehensive approach, but implementation would touch many parts of the system and require careful coordination between litegraph and ComfyUI frontend codebases.
+The solution outlined in `DOM_WIDGET_PROMOTION_SOLUTION.md` provides a comprehensive approach, but implementation would touch many parts of the system and require careful coordination between litegraph and Hanzo Studio frontend codebases.

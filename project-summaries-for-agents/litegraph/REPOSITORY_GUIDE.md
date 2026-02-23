@@ -2,17 +2,17 @@
 
 ## Repository Overview
 
-**@ComfyOrg/litegraph** is a TypeScript library for creating node-based visual programming interfaces in web browsers, specifically forked and customized for ComfyUI frontend applications.
+**@ComfyOrg/litegraph** is a TypeScript library for creating node-based visual programming interfaces in web browsers, specifically forked and customized for Hanzo Studio frontend applications.
 
 - **Purpose**: Graph node editor similar to Unreal Blueprints/PureData for visual programming
-- **Repository**: https://github.com/Comfy-Org/litegraph.js
+- **Repository**: https://github.com/hanzoui/litegraph.js
 - **Main branch**: `master`
 - **Current version**: 0.16.3 (December 2025)
 - **License**: MIT
 - **Status**: Active development with enhanced subgraph event system
 
 ### Key Characteristics
-- Fork of original litegraph.js with ComfyUI-specific customizations
+- Fork of original litegraph.js with Hanzo Studio-specific customizations
 - Largely incompatible with original litegraph.js due to API changes
 - Canvas-based rendering with HTML5 Canvas2D
 - Supports both client-side and server-side (Node.js) execution
@@ -473,4 +473,4 @@ Based on open issues:
 - **Link Drop Support**: Dropping links on empty IO node backgrounds (#1083)
 - **Code Refactoring**: Split large classes (LGraph, LGraphCanvas, LGraphNode) into smaller, manageable objects (#1045-1048)
 
-This repository serves as the core graph editing engine for ComfyUI, making it critical infrastructure that requires careful, well-tested changes with strong consideration for backward compatibility and performance.
+This repository serves as the core graph editing engine for Hanzo Studio, making it critical infrastructure that requires careful, well-tested changes with strong consideration for backward compatibility and performance.

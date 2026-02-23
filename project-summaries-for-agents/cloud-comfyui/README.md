@@ -1,8 +1,8 @@
-# ComfyUI Cloud Infrastructure Repository Guide
+# Hanzo Studio Cloud Infrastructure Repository Guide
 
 ## Repository Overview
-- **Purpose**: Cloud infrastructure for running ComfyUI at scale, providing API-based workflow execution
-- **Repository**: https://github.com/Comfy-Org/cloud
+- **Purpose**: Cloud infrastructure for running Hanzo Studio at scale, providing API-based workflow execution
+- **Repository**: https://github.com/hanzoui/cloud
 - **Language**: Go 1.24.2 with PostgreSQL database
 - **Architecture**: Microservices pattern with 3 core services + database
 
@@ -24,10 +24,10 @@ cloud/
 │   └── testutil/           # Database testing utilities
 ├── services/
 │   ├── ingest/             # API gateway service
-│   │   ├── static/         # Embedded ComfyUI frontend
+│   │   ├── static/         # Embedded Hanzo Studio frontend
 │   │   └── server/         # HTTP handlers
 │   ├── dispatcher/         # Job orchestration service
-│   └── inference/          # ComfyUI execution service
+│   └── inference/          # Hanzo Studio execution service
 ├── infrastructure/         # Terraform IaC
 │   ├── global/            # Main configuration
 │   └── modules/           # Reusable modules
@@ -85,7 +85,7 @@ User Request → Ingest Service (8080) → Creates Job
                     ↓
              Dispatcher Service (8081) → Updates Status
                     ↓
-             Inference Service (8082) → Executes ComfyUI
+             Inference Service (8082) → Executes Hanzo Studio
                     ↓
              Outputs stored in GCS → Results broadcast via Supabase
 ```
@@ -100,7 +100,7 @@ User Request → Ingest Service (8080) → Creates Job
 
 ### Service Communication
 - HTTP REST APIs between services
-- WebSocket for real-time updates (inference ↔ ComfyUI)
+- WebSocket for real-time updates (inference ↔ Hanzo Studio)
 - Supabase Realtime for client broadcasts
 - PostgreSQL for shared state
 
@@ -137,7 +137,7 @@ User Request → Ingest Service (8080) → Creates Job
 ### Ingest Service (Port 8080)
 - **Purpose**: API gateway, authentication, job creation
 - **Key endpoints**: `/api/prompt`, `/api/queue`, `/api/history`
-- **Static files**: Serves embedded ComfyUI frontend
+- **Static files**: Serves embedded Hanzo Studio frontend
 - **Auth**: Firebase in production, mock in localdev
 
 ### Dispatcher Service (Port 8081)
@@ -146,7 +146,7 @@ User Request → Ingest Service (8080) → Creates Job
 - **Responsibility**: Routes jobs to available inference instances
 
 ### Inference Service (Port 8082)
-- **Purpose**: ComfyUI execution and output handling
+- **Purpose**: Hanzo Studio execution and output handling
 - **Components**: WebSocket client, storage gateway, broadcast system
 - **Requirements**: `supabase-credentials.json` for broadcasting
 
@@ -180,5 +180,5 @@ User Request → Ingest Service (8080) → Creates Job
 ## External Resources
 - Ent ORM Documentation: https://entgo.io/
 - Supabase Local Development: https://supabase.com/docs/guides/cli/local-development
-- ComfyUI Repository: https://github.com/comfyanonymous/ComfyUI
+- Hanzo Studio Repository: https://github.com/hanzoai/studio
 - Atlas Migration Tool: https://atlasgo.io/

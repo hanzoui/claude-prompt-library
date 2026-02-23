@@ -695,9 +695,9 @@ class PhysicsWorld {
 
 ## Performance Benchmarking
 
-### Actual Performance Data from ComfyUI Vue Node System
+### Actual Performance Data from Hanzo Studio Vue Node System
 
-Real-world testing with ComfyUI's Vue-based node rendering system provides concrete performance data:
+Real-world testing with Hanzo Studio's Vue-based node rendering system provides concrete performance data:
 
 #### Spatial Index Performance Results
 
@@ -711,7 +711,7 @@ Real-world testing with ComfyUI's Vue-based node rendering system provides concr
 - Query time remains <5ms even with 1000 nodes
 - Memory usage scales linearly with node count
 
-**Real ComfyUI Workflow Simulation:**
+**Real Hanzo Studio Workflow Simulation:**
 - 155 clustered nodes (typical large workflow): 30ms setup time
 - Panning simulation (50 viewport queries): <50ms total
 - Average query time: <1.5ms during interactive panning
@@ -741,7 +741,7 @@ Real-world testing with ComfyUI's Vue-based node rendering system provides concr
 1. **Logarithmic Scaling Validated**: QuadTree maintains O(log n) characteristics in practice
 2. **Threshold Identification**: Performance advantage kicks in around 200-500 nodes
 3. **Consistent Performance**: Operations maintain speed across different viewport positions
-4. **Real-World Efficiency**: Actual ComfyUI workflows show excellent culling ratios
+4. **Real-World Efficiency**: Actual Hanzo Studio workflows show excellent culling ratios
 
 ### Comparative Analysis Tools
 

@@ -1,8 +1,8 @@
-# ComfyUI Frontend Responsive Design Patterns
+# Hanzo Frontend Responsive Design Patterns
 
 ## Overview
 
-ComfyUI's responsive design system uses multiple breakpoint sources, leading to inconsistencies across the codebase. This document captures the discovered patterns and provides guidance for maintaining responsive consistency.
+Hanzo Studio's responsive design system uses multiple breakpoint sources, leading to inconsistencies across the codebase. This document captures the discovered patterns and provides guidance for maintaining responsive consistency.
 
 ## The Four Breakpoint Systems
 
@@ -167,4 +167,4 @@ When testing responsive features:
 3. Check PrimeVue component breakpoints match Tailwind values
 4. Ensure VueUse composables use standard breakpoints
 
-This documentation reflects the current state of ComfyUI's responsive design system and provides actionable patterns for improvement.
+This documentation reflects the current state of Hanzo Studio's responsive design system and provides actionable patterns for improvement.

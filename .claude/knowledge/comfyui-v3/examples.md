@@ -1,4 +1,4 @@
-# ComfyUI v3 Node Examples
+# Hanzo Studio v3 Node Examples
 
 Real-world examples of v3 nodes demonstrating various features and patterns.
 

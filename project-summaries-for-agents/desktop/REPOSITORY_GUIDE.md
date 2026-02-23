@@ -203,8 +203,8 @@ Recent commit patterns show:
 
 ### File Locations
 - **Windows**: `%APPDATA%\Hanzo Studio` (config), `%APPDATA%\Local\Programs\hanzo-studio-electron` (app)
-- **macOS**: `~/Library/Application Support/Hanzo Studio` (config), `/Applications` (app)
-- **Linux**: `~/.config/Hanzo Studio` (config)
+- **macOS**: `~/Library/Application Support/HanzoStudio` (config), `/Applications` (app)
+- **Linux**: `~/.config/HanzoStudio` (config)
 
 ### Build & Distribution
 - **Windows**: NSIS installer with code signing

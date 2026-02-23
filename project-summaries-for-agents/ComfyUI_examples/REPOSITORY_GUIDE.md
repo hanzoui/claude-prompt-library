@@ -103,13 +103,13 @@ category_name/
 #### File Placement Requirements
 Each README specifies exact file placement:
 ```
-Hanzo Studio/models/checkpoints/     # Main model files
-Hanzo Studio/models/loras/          # LoRA files
-Hanzo Studio/models/controlnet/     # ControlNet models
-Hanzo Studio/models/vae/            # VAE models
-Hanzo Studio/models/text_encoders/  # CLIP/T5 text encoders
-Hanzo Studio/models/diffusion_models/ # Diffusion model weights
-Hanzo Studio/input/                 # Input images
+HanzoStudio/models/checkpoints/     # Main model files
+HanzoStudio/models/loras/          # LoRA files
+HanzoStudio/models/controlnet/     # ControlNet models
+HanzoStudio/models/vae/            # VAE models
+HanzoStudio/models/text_encoders/  # CLIP/T5 text encoders
+HanzoStudio/models/diffusion_models/ # Diffusion model weights
+HanzoStudio/input/                 # Input images
 ```
 
 ## Development Workflow

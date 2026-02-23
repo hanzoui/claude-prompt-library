@@ -5,7 +5,7 @@ You are managing the release of the Hanzo Studio frontend package, a critical co
 </context>
 
 <important_prerequisites>
-- You MUST be in the root directory of the Hanzo Studio_frontend repository
+- You MUST be in the root directory of the HanzoStudio_frontend repository
 - The PyPI API token MUST be available as environment variable `COMFYUI_FRONTEND_PYPI_TOKEN`
 - The target version is: $ARGUMENTS
 - Node.js and npm must be installed and available

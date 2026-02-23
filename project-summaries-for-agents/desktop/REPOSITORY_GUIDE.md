@@ -173,7 +173,7 @@ Recent commit patterns show:
 
 ### Core Components Packaged
 - **Hanzo Studio v0.3.40** - Core AI diffusion model GUI and inference engine
-- **Hanzo Studio_frontend v1.21.7** - Modern React-based web interface
+- **HanzoStudio_frontend v1.21.7** - Modern React-based web interface
 - **Hanzo Manager** - Plugin/extension management system
 - **uv v0.5.31** - Ultra-fast Python package installer
 

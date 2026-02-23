@@ -4,7 +4,7 @@
 
 **Hanzo Manager** is a critical extension for the Hanzo Studio ecosystem that provides comprehensive package and model management capabilities. This extension serves as the primary infrastructure component for installing, managing, and securing custom nodes, models, and workflows within Hanzo Studio environments.
 
-- **Repository**: https://github.com/ltdrdata/Hanzo Manager (canonical) / hanzoui/studio-Manager (community)
+- **Repository**: https://github.com/ltdrdata/ComfyUI-Manager (canonical) / hanzoui/manager (community)
 - **Version**: 3.32.8 (as of latest analysis)
 - **License**: See LICENSE.txt
 - **Author**: ltdrdata (Dr.Lt.Data)
@@ -104,7 +104,7 @@ Hanzo Manager/
 ```bash
 # Clone into Hanzo Studio custom_nodes directory
 cd HanzoStudio/custom_nodes
-git clone https://github.com/ltdrdata/Hanzo Manager hanzo-studio-manager
+git clone https://github.com/ltdrdata/ComfyUI-Manager hanzo-studio-manager
 
 # For development/testing
 cd hanzo-studio-manager
@@ -205,7 +205,7 @@ network_mode = <public|private|offline>
 #### 1. **Multi-Channel System Architecture**
 ```
 Channel Types:
-├── Default Channel (github.com/ltdrdata/Hanzo Manager/main)
+├── Default Channel (github.com/ltdrdata/ComfyUI-Manager/main)
 ├── Development Channels (dev/, new/, tutorial/)
 ├── Legacy Support (legacy/)
 ├── Forked Repositories (forked/)

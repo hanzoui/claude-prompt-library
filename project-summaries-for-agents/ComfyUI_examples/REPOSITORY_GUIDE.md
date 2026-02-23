@@ -297,7 +297,7 @@ Is this a static image workflow?
 - **Blog**: https://hanzoai.github.io/HanzoStudio_Blog/
 
 ### Community Resources
-- **Hanzo Manager**: https://github.com/ltdrdata/Hanzo Manager
+- **Hanzo Manager**: https://github.com/ltdrdata/ComfyUI-Manager
 - **Community Workflows**: https://comfyworkflows.com/
 - **OpenArt Workflows**: https://openart.ai/workflows/
 

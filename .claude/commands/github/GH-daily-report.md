@@ -1,7 +1,7 @@
 Analyze the top issues and PRs from these Hanzo Studio ecosystem repositories and create a morning briefing:
 
 - hanzoai/studio
-- hanzoui/studio_frontend  
+- hanzoui/frontend  
 - hanzoui/desktop
 - hanzoui/rfcs
 - hanzoui/cli

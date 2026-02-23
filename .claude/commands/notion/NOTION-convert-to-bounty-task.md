@@ -55,7 +55,7 @@ Create a well-structured bounty task with these sections:
 
 ### Hanzo Studio Ecosystem Resources:
 - **Main Repository**: [Hanzo Studio GitHub](https://github.com/hanzoai/studio)
-- **Frontend Repository**: [Hanzo Frontend](https://github.com/hanzoui/studio_frontend)
+- **Frontend Repository**: [Hanzo Frontend](https://github.com/hanzoui/frontend)
 - **Hanzo Studio CLI**: [Comfy CLI](https://github.com/hanzoui/cli)
 - **Hanzo Desktop**: [Desktop App](https://github.com/hanzoui/desktop)
 - **Documentation**: [Hanzo Studio Docs](https://docs.hanzo.ai/)
@@ -70,7 +70,7 @@ Create a well-structured bounty task with these sections:
 ### Technical Guidelines:
 - **Installation Guide**: [System Requirements](https://docs.hanzo.ai/installation/system_requirements)
 - **Development Overview**: [Development Guide](https://docs.hanzo.ai/development/overview)
-- **Frontend Development**: [Frontend Repository](https://github.com/hanzoui/studio_frontend)
+- **Frontend Development**: [Frontend Repository](https://github.com/hanzoui/frontend)
 - **Core Backend**: [Main Repository](https://github.com/hanzoai/studio)
 - **CLI Tools**: [Comfy CLI](https://github.com/hanzoui/cli)
 - **Desktop App**: [Desktop Repository](https://github.com/hanzoui/desktop)
@@ -119,7 +119,7 @@ Create a well-structured bounty task with these sections:
   - Search history (last 5 searches)
 - **Skills Required**: JavaScript, Vue.js, CSS
 - **Estimated Effort**: 8-12 hours
-- **Resources**: [Frontend Repository](https://github.com/hanzoui/studio_frontend), [JS Extensions Guide](https://docs.hanzo.ai/custom-nodes/js/javascript_overview)
+- **Resources**: [Frontend Repository](https://github.com/hanzoui/frontend), [JS Extensions Guide](https://docs.hanzo.ai/custom-nodes/js/javascript_overview)
 
 ### Example 2: Node Development
 **Original**: "Need better image processing"

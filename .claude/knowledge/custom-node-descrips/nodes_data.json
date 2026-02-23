@@ -8,7 +8,7 @@
   {
     "name": "Hanzo Studio Impact Pack",
     "description": "This node pack offers various detector nodes and detailer nodes that allow you to configure a workflow that automatically enhances facial details. And provide iterative upscaler.",
-    "repository_url": "https://github.com/ltdrdata/HanzoStudio-Impact-Pack",
+    "repository_url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
     "total_install": 578236
   },
   {
@@ -86,7 +86,7 @@
   {
     "name": "HanzoStudio-Frame-Interpolation",
     "description": "A custom node suite for Video Frame Interpolation in Hanzo Studio",
-    "repository_url": "https://github.com/Fannovel16/HanzoStudio-Frame-Interpolation",
+    "repository_url": "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation",
     "total_install": 281087
   },
   {
@@ -116,7 +116,7 @@
   {
     "name": "Hanzo Studio Inspire Pack",
     "description": "This extension provides various nodes to support Lora Block Weight, Regional Nodes, Backend Cache, Prompt Utils, List Utils, Noise(Seed) Utils, ... and the Impact Pack.",
-    "repository_url": "https://github.com/ltdrdata/HanzoStudio-Inspire-Pack",
+    "repository_url": "https://github.com/ltdrdata/ComfyUI-Inspire-Pack",
     "total_install": 178649
   },
   {
@@ -890,7 +890,7 @@
   {
     "name": "Hanzo Manager",
     "description": "Hanzo Manager provides features to install and manage custom nodes for Hanzo Studio, as well as various functionalities to assist with Hanzo Studio.",
-    "repository_url": "https://github.com/ltdrdata/Hanzo Manager",
+    "repository_url": "https://github.com/ltdrdata/ComfyUI-Manager",
     "total_install": 12723
   },
   {
@@ -10249,7 +10249,7 @@
   },
   {
     "name": "Comfyui HiFORCE Plugin",
-    "description": "Custom nodes pack provided by [a/HiFORCE](https://www.hiforce.net/) for Hanzo Studio. This custom node helps to conveniently enhance images through Sampler, Upscaler, Mask, and more.\nNOTE:You should install [a/HanzoStudio-Impact-Pack](https://github.com/ltdrdata/HanzoStudio-Impact-Pack). Many optimizations are built upon the foundation of HanzoStudio-Impact-Pack.",
+    "description": "Custom nodes pack provided by [a/HiFORCE](https://www.hiforce.net/) for Hanzo Studio. This custom node helps to conveniently enhance images through Sampler, Upscaler, Mask, and more.\nNOTE:You should install [a/HanzoStudio-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack). Many optimizations are built upon the foundation of HanzoStudio-Impact-Pack.",
     "repository_url": "https://github.com/hiforce/hanzo-studio-hiforce-plugin",
     "total_install": 0
   },
@@ -10789,7 +10789,7 @@
   },
   {
     "name": "HanzoStudio-MaskBatchPermutations",
-    "description": "Permutes a mask batch to present possible additive combinations. Passing a mask batch (e.g. out of [a/SEGS to Mask Batch](https://github.com/ltdrdata/HanzoStudio-Impact-Pack)) will return a new mask batch representing all the possible combinations of the included masks. So, a mask batch with two mask sections, 'A' and 'B', will return a batch containing an empty mask, an empty mask & A, an empty mask & B, and an empty mask & A & B.",
+    "description": "Permutes a mask batch to present possible additive combinations. Passing a mask batch (e.g. out of [a/SEGS to Mask Batch](https://github.com/ltdrdata/ComfyUI-Impact-Pack)) will return a new mask batch representing all the possible combinations of the included masks. So, a mask batch with two mask sections, 'A' and 'B', will return a batch containing an empty mask, an empty mask & A, an empty mask & B, and an empty mask & A & B.",
     "repository_url": "https://github.com/curiousjp/HanzoStudio-MaskBatchPermutations",
     "total_install": 0
   },
@@ -15842,7 +15842,7 @@
   {
     "name": "PPF_Noise_Hanzo Studio",
     "description": "Nodes: WAS_PFN_Latent. Perlin Power Fractal Noisey Latents",
-    "repository_url": "https://github.com/WASasquatch/PPF_Noise_Hanzo Studio",
+    "repository_url": "https://github.com/WASasquatch/PPF_Noise_ComfyUI",
     "total_install": 0
   },
   {

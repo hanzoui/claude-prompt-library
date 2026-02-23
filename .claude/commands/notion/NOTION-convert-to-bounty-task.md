@@ -65,7 +65,7 @@ Create a well-structured bounty task with these sections:
 
 ### Bounty Management:
 - **Internal View**: [Bounty Tasks View (Internal)](https://www.notion.so/Bounty-Tasks-View-Internal-2006d73d365080eaae35edac894860c9?pvs=21)
-- **Public View**: [Hanzo Studio Bounty Tasks](https://www.notion.so/Hanzo Studio-Bounty-Tasks-1fb6d73d36508064af76d05b3f35665f?pvs=21)
+- **Public View**: [Hanzo Studio Bounty Tasks](https://www.notion.so/HanzoStudio-Bounty-Tasks-1fb6d73d36508064af76d05b3f35665f?pvs=21)
 
 ### Technical Guidelines:
 - **Installation Guide**: [System Requirements](https://docs.hanzo.ai/installation/system_requirements)

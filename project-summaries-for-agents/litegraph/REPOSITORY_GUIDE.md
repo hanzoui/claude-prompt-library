@@ -12,7 +12,7 @@
 - **Status**: Active development with enhanced subgraph event system
 
 ### Key Characteristics
-- Fork of original litegraph.js with Hanzo Studio-specific customizations
+- Fork of original litegraph.js with HanzoStudio-specific customizations
 - Largely incompatible with original litegraph.js due to API changes
 - Canvas-based rendering with HTML5 Canvas2D
 - Supports both client-side and server-side (Node.js) execution

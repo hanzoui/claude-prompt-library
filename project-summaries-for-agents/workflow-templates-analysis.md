@@ -214,7 +214,7 @@ Current categories with expansion patterns:
 #### Template Testing Checklist
 ```bash
 # Delete existing models/assets to test fresh user experience
-rm -rf Hanzo Studio/models/*
+rm -rf HanzoStudio/models/*
 
 # Load template in Hanzo Studio
 # Verify automatic model downloads

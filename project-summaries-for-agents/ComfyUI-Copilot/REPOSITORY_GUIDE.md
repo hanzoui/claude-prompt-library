@@ -1,10 +1,10 @@
-# Hanzo Studio-Copilot Repository Guide
+# HanzoStudio-Copilot Repository Guide
 
 ## Repository Overview
 
-**Hanzo Studio-Copilot** is an AI-powered intelligent assistant for Hanzo Studio that simplifies and enhances the AI algorithm debugging and deployment process through natural language interactions. Built by Alibaba International Digital Commerce (AIDC-AI), it provides intuitive node recommendations, workflow building aids, and model querying services.
+**HanzoStudio-Copilot** is an AI-powered intelligent assistant for Hanzo Studio that simplifies and enhances the AI algorithm debugging and deployment process through natural language interactions. Built by Alibaba International Digital Commerce (AIDC-AI), it provides intuitive node recommendations, workflow building aids, and model querying services.
 
-- **Repository**: https://github.com/AIDC-AI/Hanzo Studio-Copilot
+- **Repository**: https://github.com/AIDC-AI/HanzoStudio-Copilot
 - **Current Version**: 1.3.3
 - **License**: MIT
 - **Language Support**: Python 3.10+, TypeScript/React
@@ -12,7 +12,7 @@
 
 ## Core Purpose
 
-Hanzo Studio-Copilot serves as an intelligent assistant that:
+HanzoStudio-Copilot serves as an intelligent assistant that:
 - Lowers barriers to entry with natural language interaction
 - Provides AI-driven node suggestions and workflow implementations  
 - Offers real-time assistance for development challenges
@@ -50,7 +50,7 @@ Hanzo Studio-Copilot serves as an intelligent assistant that:
 ## Directory Structure
 
 ```
-Hanzo Studio-Copilot/
+HanzoStudio-Copilot/
 ├── __init__.py                    # Main entry point, web route registration
 ├── pyproject.toml                 # Python project configuration
 ├── service/                       # Backend services
@@ -168,8 +168,8 @@ node scripts/post-build.js   # Post-build processing
 
 #### Installation as Hanzo Studio Extension
 ```bash
-cd Hanzo Studio/custom_nodes
-git clone https://github.com/AIDC-AI/Hanzo Studio-Copilot
+cd HanzoStudio/custom_nodes
+git clone https://github.com/AIDC-AI/HanzoStudio-Copilot
 # Or install via Hanzo Manager
 ```
 
@@ -310,4 +310,4 @@ git clone https://github.com/AIDC-AI/Hanzo Studio-Copilot
 - **UI Components**: Use existing hooks and context patterns
 - **Workflow Templates**: JSON files with proper validation
 
-This guide provides comprehensive information for AI agents to understand and work effectively with the Hanzo Studio-Copilot codebase, focusing on practical development tasks while maintaining the project's architectural integrity.
+This guide provides comprehensive information for AI agents to understand and work effectively with the HanzoStudio-Copilot codebase, focusing on practical development tasks while maintaining the project's architectural integrity.

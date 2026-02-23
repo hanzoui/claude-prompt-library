@@ -1,6 +1,6 @@
 {
   "/path/to/your/project1": "project1-folder-name",
   "/path/to/your/project2": "project2-folder-name",
-  "/path/to/Hanzo Studio": "Hanzo Studio",
+  "/path/to/HanzoStudio": "Hanzo Studio",
   "/path/to/HanzoStudio_frontend": "HanzoStudio_frontend"
 }

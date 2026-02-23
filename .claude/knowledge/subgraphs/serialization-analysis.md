@@ -6,7 +6,7 @@ After analyzing the LiteGraph codebase, I've discovered a comprehensive and well
 
 ### **Serialization Format**
 
-The subgraph definition uses the `ExportedSubgraph` interface (/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/types/serialisation.ts:125-136):
+The subgraph definition uses the `ExportedSubgraph` interface (/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/types/serialisation.ts:125-136):
 
 ```typescript
 export interface ExportedSubgraph extends SerialisableGraph {
@@ -32,7 +32,7 @@ The system implements a two-tier versioning approach:
 1. **Schema Version**: Currently supports version 1 (`LGraph.serialisedSchemaVersion = 1`)
 2. **Legacy Compatibility**: Maintains support for version 0.4 format
 
-**Version handling in LGraph.configure()** (/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/LGraph.ts):
+**Version handling in LGraph.configure()** (/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/LGraph.ts):
 ```typescript
 if (data.version === 0.4) {
   // Legacy format handling
@@ -124,7 +124,7 @@ graph LR
 
 ### **Instance Format**
 
-Subgraph instances use `ExportedSubgraphInstance` (/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/types/serialisation.ts:98-104):
+Subgraph instances use `ExportedSubgraphInstance` (/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/types/serialisation.ts:98-104):
 
 ```typescript
 export interface ExportedSubgraphInstance extends NodeSubgraphSharedProps {
@@ -172,7 +172,7 @@ Links crossing subgraph boundaries use **special node IDs**:
 - `SUBGRAPH_INPUT_ID = -10`: Virtual input node
 - `SUBGRAPH_OUTPUT_ID = -20`: Virtual output node
 
-**Link structure** (/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/types/serialisation.ts:199-214):
+**Link structure** (/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/types/serialisation.ts:199-214):
 ```typescript
 export interface SerialisableLLink {
   id: LinkId
@@ -187,7 +187,7 @@ export interface SerialisableLLink {
 
 ### **Resolution During Load**
 
-The `LLink.resolve()` method handles cross-subgraph resolution (/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/LLink.ts):
+The `LLink.resolve()` method handles cross-subgraph resolution (/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/LLink.ts):
 
 ```typescript
 resolve(network: BasicReadonlyNetwork): ResolvedConnection {
@@ -199,7 +199,7 @@ resolve(network: BasicReadonlyNetwork): ResolvedConnection {
 
 ### **Boundary Link Processing**
 
-The `getBoundaryLinks()` function (/home/c_byrne/projects/comfyui-frontend-testing/litegraph-clone/src/subgraph/subgraphUtils.ts:75-169) categorizes links when creating subgraphs:
+The `getBoundaryLinks()` function (/home/c_byrne/projects/hanzo-studio-frontend-testing/litegraph-clone/src/subgraph/subgraphUtils.ts:75-169) categorizes links when creating subgraphs:
 
 - **Internal Links**: Both endpoints inside the selection
 - **Boundary Input Links**: External output connecting to internal input

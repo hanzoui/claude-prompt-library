@@ -1,8 +1,8 @@
-# ComfyUI Sidebar Extension System
+# Hanzo Studio Sidebar Extension System
 
 ## Overview
 
-The ComfyUI sidebar system provides a flexible API for extensions to add custom tabs to the sidebar. It supports both Vue components and custom DOM-based extensions through a unified interface.
+The Hanzo Studio sidebar system provides a flexible API for extensions to add custom tabs to the sidebar. It supports both Vue components and custom DOM-based extensions through a unified interface.
 
 ## Architecture
 
@@ -207,7 +207,7 @@ destroy: () => {
 }
 ```
 
-## Integration with ComfyUI Systems
+## Integration with Hanzo Studio Systems
 
 Sidebar extensions can interact with:
 

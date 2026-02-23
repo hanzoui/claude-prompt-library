@@ -2,7 +2,7 @@
 
 ## Overview
 
-The versioned settings system allows ComfyUI to change default settings for new users while preserving existing users' expected behavior. This pattern was implemented in PRs #4337 and #4354, and provides a clean solution for improving defaults without breaking changes.
+The versioned settings system allows Hanzo Studio to change default settings for new users while preserving existing users' expected behavior. This pattern was implemented in PRs #4337 and #4354, and provides a clean solution for improving defaults without breaking changes.
 
 ## Implementation Pattern
 
@@ -159,4 +159,4 @@ The versioned settings system could be extended to:
 - Provide analytics on setting adoption
 - Allow server-side default overrides
 
-This pattern provides a robust solution for evolving ComfyUI's UX while respecting existing users' workflows and expectations.
+This pattern provides a robust solution for evolving Hanzo Studio's UX while respecting existing users' workflows and expectations.

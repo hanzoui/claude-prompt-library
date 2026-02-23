@@ -1,4 +1,4 @@
-# PrimeVue Integration Patterns in ComfyUI Frontend
+# PrimeVue Integration Patterns in Hanzo Frontend
 
 ## Tooltip Behavior and Z-Index Management
 

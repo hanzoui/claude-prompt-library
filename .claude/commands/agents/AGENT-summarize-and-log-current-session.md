@@ -43,7 +43,7 @@ Your task is to create an ultra-compact summary of our entire conversation with 
    - Filename format: `summary-YYYY-MM-DD-HHMMSS-semantic-description.md`
      - Use current timestamp for YYYY-MM-DD-HHMMSS
      - Add a kebab-case semantic description of the main topics (3-7 words)
-     - Example: `summary-2025-06-29-181658-comfyui-vue-widget-interfaces.md`
+     - Example: `summary-2025-06-29-181658-hanzo-studio-vue-widget-interfaces.md`
    - CRITICAL: First check if a file with the same name exists
    - If it exists, append `-v2`, `-v3`, etc. until you find an available filename
    - This is essential as multiple people may be writing to this folder simultaneously

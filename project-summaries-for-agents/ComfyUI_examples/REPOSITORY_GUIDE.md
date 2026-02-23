@@ -1,21 +1,21 @@
-# ComfyUI Examples Repository Analysis Guide
+# Hanzo Studio Examples Repository Analysis Guide
 
 ## Repository Overview
 
-**Repository**: ComfyUI_examples  
-**Owner**: comfyanonymous  
-**Location**: `~/projects/comfyui-frontend-testing/ComfyUI_examples`  
-**GitHub**: https://github.com/comfyanonymous/ComfyUI_examples  
+**Repository**: Hanzo Studio_examples  
+**Owner**: hanzoai  
+**Location**: `~/projects/hanzo-studio-frontend-testing/Hanzo Studio_examples`  
+**GitHub**: https://github.com/hanzoai/studio_examples  
 **License**: Open source (permissive ISC-style license)  
-**Purpose**: Comprehensive collection of workflow examples demonstrating ComfyUI's capabilities
+**Purpose**: Comprehensive collection of workflow examples demonstrating Hanzo Studio's capabilities
 
-This repository serves as the **official examples collection** for ComfyUI, a powerful node-based interface for AI image and video generation. It contains 35 different categories of examples covering everything from basic techniques to cutting-edge AI models.
+This repository serves as the **official examples collection** for Hanzo Studio, a powerful node-based interface for AI image and video generation. It contains 35 different categories of examples covering everything from basic techniques to cutting-edge AI models.
 
 ## Key Concepts & Unique Features
 
 ### Embedded Workflow Metadata System
 - **PNG files contain complete workflow data** in their metadata
-- Users can **drag-and-drop PNG images directly into ComfyUI** to load the full workflow
+- Users can **drag-and-drop PNG images directly into Hanzo Studio** to load the full workflow
 - This makes learning and experimentation incredibly seamless
 - No separate workflow files needed - the image IS the workflow
 
@@ -81,7 +81,7 @@ Each category follows this structure:
 ```
 category_name/
 ├── README.md              # Documentation and setup instructions
-├── example_workflow.png   # PNG with embedded ComfyUI workflow
+├── example_workflow.png   # PNG with embedded Hanzo Studio workflow
 ├── input_image.jpg        # Input images where needed
 └── workflow.json          # Optional standalone JSON workflow
 ```
@@ -91,9 +91,9 @@ category_name/
 ### Working with Workflows
 
 #### Loading Workflows
-- **Drag PNG images into ComfyUI** to automatically load workflows
-- **Use the Load button** in ComfyUI menu for PNG files
-- **Load JSON files** directly in ComfyUI for standalone workflows
+- **Drag PNG images into Hanzo Studio** to automatically load workflows
+- **Use the Load button** in Hanzo Studio menu for PNG files
+- **Load JSON files** directly in Hanzo Studio for standalone workflows
 
 #### Understanding Metadata
 - All example PNG files contain complete node graph information
@@ -103,13 +103,13 @@ category_name/
 #### File Placement Requirements
 Each README specifies exact file placement:
 ```
-ComfyUI/models/checkpoints/     # Main model files
-ComfyUI/models/loras/          # LoRA files
-ComfyUI/models/controlnet/     # ControlNet models
-ComfyUI/models/vae/            # VAE models
-ComfyUI/models/text_encoders/  # CLIP/T5 text encoders
-ComfyUI/models/diffusion_models/ # Diffusion model weights
-ComfyUI/input/                 # Input images
+Hanzo Studio/models/checkpoints/     # Main model files
+Hanzo Studio/models/loras/          # LoRA files
+Hanzo Studio/models/controlnet/     # ControlNet models
+Hanzo Studio/models/vae/            # VAE models
+Hanzo Studio/models/text_encoders/  # CLIP/T5 text encoders
+Hanzo Studio/models/diffusion_models/ # Diffusion model weights
+Hanzo Studio/input/                 # Input images
 ```
 
 ## Development Workflow
@@ -139,7 +139,7 @@ cd flux/ && ls           # Explore specific category
 
 #### Quality Standards
 - **Always include model download links** in README files
-- **Specify exact file placement** in ComfyUI directory structure
+- **Specify exact file placement** in Hanzo Studio directory structure
 - **Provide memory optimization tips** for resource-constrained systems
 - **Include parameter explanations** for key settings
 - **Test workflows** before committing
@@ -210,7 +210,7 @@ Repository Root
    - Parameter explanations
 
 4. **Create Example Workflows**
-   - Generate workflows in ComfyUI
+   - Generate workflows in Hanzo Studio
    - Save as PNG with embedded metadata
    - Test loading workflow from PNG
    - Include variety of use cases
@@ -222,7 +222,7 @@ Repository Root
 ### Testing Procedures
 
 1. **Workflow Validation**
-   - Load PNG file in ComfyUI
+   - Load PNG file in Hanzo Studio
    - Verify all nodes load correctly
    - Check for missing models/files
    - Test generation process
@@ -244,7 +244,7 @@ Repository Root
 
 #### Workflow Requirements
 - PNG files must contain valid metadata
-- Should load without errors in ComfyUI
+- Should load without errors in Hanzo Studio
 - Include sensible default parameters
 - Demonstrate key features of the technique/model
 
@@ -291,13 +291,13 @@ Is this a static image workflow?
 ## External Resources & Ecosystem
 
 ### Official Documentation
-- **ComfyUI Main**: https://github.com/comfyanonymous/ComfyUI
-- **ComfyUI Docs**: https://docs.comfy.org/
-- **Tutorial**: https://comfyanonymous.github.io/ComfyUI_tutorial_vn/
-- **Blog**: https://comfyanonymous.github.io/ComfyUI_Blog/
+- **Hanzo Studio Main**: https://github.com/hanzoai/studio
+- **Hanzo Studio Docs**: https://docs.hanzo.ai/
+- **Tutorial**: https://hanzoai.github.io/Hanzo Studio_tutorial_vn/
+- **Blog**: https://hanzoai.github.io/Hanzo Studio_Blog/
 
 ### Community Resources
-- **ComfyUI Manager**: https://github.com/ltdrdata/ComfyUI-Manager
+- **Hanzo Manager**: https://github.com/ltdrdata/Hanzo Manager
 - **Community Workflows**: https://comfyworkflows.com/
 - **OpenArt Workflows**: https://openart.ai/workflows/
 
@@ -306,4 +306,4 @@ Is this a static image workflow?
 - **Civit AI**: Community models and LoRAs
 - **Official releases**: Direct from model creators (Black Forest Labs, Stability AI, etc.)
 
-This repository serves as the **definitive reference** for ComfyUI capabilities and should be consulted when exploring new techniques or helping users understand ComfyUI's potential.
+This repository serves as the **definitive reference** for Hanzo Studio capabilities and should be consulted when exploring new techniques or helping users understand Hanzo Studio's potential.

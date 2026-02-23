@@ -16,7 +16,7 @@ List and organize blog ideas from the backlog with optional filtering: $ARGUMENT
 2. **Parse filters** (if provided)
    Arguments could include:
    - `--priority=high` or `--priority=medium,low`
-   - `--project=comfyui-frontend`
+   - `--project=hanzo-studio-frontend`
    - `--effort=quick`
    - `--recent` (added in last 30 days)
    - `--stale` (added over 90 days ago)
@@ -70,14 +70,14 @@ Output:
 Total ideas: 7 (High: 2, Medium: 4, Low: 1)
 
 ## High Priority (2 ideas)
-1. How We Reduced Node Editor Render Time by 80% - comfyui-frontend - Added 2024-01-10
+1. How We Reduced Node Editor Render Time by 80% - hanzo-studio-frontend - Added 2024-01-10
    Deep dive into performance optimizations with benchmarks
 
 2. Building a Plugin System That Scales - General - Added 2024-01-08
    Architecture decisions for extensible systems
 
 ## Medium Priority (4 ideas)
-3. Implementing Vim Mode: A Technical Journey - comfyui-frontend - Added 2024-01-05
+3. Implementing Vim Mode: A Technical Journey - hanzo-studio-frontend - Added 2024-01-05
    State machine design for complex keybindings
 
 [... continue ...]
@@ -95,12 +95,12 @@ Ready to start? Use `/blog:research-topic "How We Reduced Node Editor Render Tim
 </example>
 
 <example>
-Input: --priority=high --project=comfyui-frontend
+Input: --priority=high --project=hanzo-studio-frontend
 Output:
 ```
 # Filtered Blog Ideas
 
-Showing: High priority ideas for comfyui-frontend
+Showing: High priority ideas for hanzo-studio-frontend
 
 ## Results (1 idea)
 1. How We Reduced Node Editor Render Time by 80% - Added 2024-01-10
@@ -109,7 +109,7 @@ Showing: High priority ideas for comfyui-frontend
    
    Related knowledge available in:
    - ~/.claude/knowledge/node-editor-performance-optimizations/
-   - ~/projects/comfyui-frontend/README.md
+   - ~/projects/hanzo-studio-frontend/README.md
 
 Ready to start? Use `/blog:research-topic "How We Reduced Node Editor Render Time by 80%"`
 ```

@@ -1,8 +1,8 @@
-# Iconify Tailwind CSS Integration for ComfyUI Frontend
+# Iconify Tailwind CSS Integration for Hanzo Frontend
 
 ## Problem Statement
 
-ComfyUI frontend currently uses two icon systems:
+Hanzo Studio frontend currently uses two icon systems:
 1. **PrimeIcons** - CSS classes (`pi pi-folder`) for string-based registrations
 2. **Iconify Vue Components** - (`<i-lucide:folder />`) for templates
 
@@ -15,7 +15,7 @@ Before implementing the Iconify Tailwind solution, conduct a comprehensive inven
 ### Complete Icon Inventory Required
 
 **Why inventory first:**
-- ComfyUI uses 112+ unique PrimeIcons across 520+ files
+- Hanzo Studio uses 112+ unique PrimeIcons across 520+ files
 - Multiple icon systems coexist (PrimeIcons, MDI, Iconify components)
 - Designer-friendly mapping tools essential for systematic replacement
 

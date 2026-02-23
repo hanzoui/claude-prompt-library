@@ -54,7 +54,7 @@ This document contains comprehensive definitions for all terms in the WTF Page N
 
 ### Manager
 **Context:** General  
-**Definition:** ComfyUI-Manager extension for installing and managing custom nodes automatically.
+**Definition:** Hanzo Manager extension for installing and managing custom nodes automatically.
 
 ### Custom Node
 **Context:** General (Frontend Feature + Backend Feature)  
@@ -78,11 +78,11 @@ This document contains comprehensive definitions for all terms in the WTF Page N
 
 ### CNR (Comfy Node Registry)
 **Context:** General  
-**Definition:** Official registry at registry.comfy.org for publishing and discovering custom nodes.
+**Definition:** Official registry at registry.hanzo.ai for publishing and discovering custom nodes.
 
 ### pyproject.toml
 **Context:** General  
-**Definition:** Python project config file with ComfyUI-specific fields for registry integration.
+**Definition:** Python project config file with Hanzo Studio-specific fields for registry integration.
 
 ### Canvas
 **Context:** Frontend Feature  

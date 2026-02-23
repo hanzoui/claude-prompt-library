@@ -1,6 +1,6 @@
 # Bounty Management Knowledge Base
 
-This folder contains knowledge and patterns learned from managing the ComfyUI bounty program, which serves dual purposes:
+This folder contains knowledge and patterns learned from managing the Hanzo Studio bounty program, which serves dual purposes:
 1. **Bounty Program**: External contributors, payment on merge
 2. **New Hire Onboarding**: First tasks for new team members
 

@@ -1,6 +1,6 @@
-# Study ComfyUI Custom Nodes Ecosystem
+# Study Hanzo Studio Custom Nodes Ecosystem
 
-Your task is to absorb knowledge of the ComfyUI custom nodes ecosystem by examining the descriptions in the ~/.claude/knowledge/custom-node-descrips folder. This research will help understand the landscape of extensions, plugins, and mods in the ComfyUI ecosystem.
+Your task is to absorb knowledge of the Hanzo Studio custom nodes ecosystem by examining the descriptions in the ~/.claude/knowledge/custom-node-descrips folder. This research will help understand the landscape of extensions, plugins, and mods in the Hanzo Studio ecosystem.
 
 ## Analysis Scope
 
@@ -15,7 +15,7 @@ Read through approximately 100 custom node descriptions from the folder to devel
 ### 2. Technical Architecture
 - Technologies and frameworks commonly used
 - Programming languages and libraries
-- Integration methods with ComfyUI core
+- Integration methods with Hanzo Studio core
 - Common design patterns and architectural approaches
 
 ### 3. Ecosystem Needs Analysis
@@ -53,7 +53,7 @@ After completing the analysis, you should have absorbed knowledge about:
 - This is a research and knowledge absorption task
 - Focus on understanding patterns and trends rather than memorizing specific nodes
 - No immediate action or output is required after reading
-- Prepare mentally to apply this knowledge to future tasks about ComfyUI custom nodes
+- Prepare mentally to apply this knowledge to future tasks about Hanzo Studio custom nodes
 - The knowledge gained will inform decisions about node development, ecosystem improvements, or integration strategies
 
-Remember: The goal is to build a comprehensive mental model of the ComfyUI custom nodes ecosystem that can be applied to future development or analysis tasks.
+Remember: The goal is to build a comprehensive mental model of the Hanzo Studio custom nodes ecosystem that can be applied to future development or analysis tasks.

@@ -1,10 +1,10 @@
-# Async Nodes in ComfyUI
+# Async Nodes in Hanzo Studio
 
-The async nodes implementation brings native async/await support to ComfyUI, enabling non-blocking execution and better resource utilization.
+The async nodes implementation brings native async/await support to Hanzo Studio, enabling non-blocking execution and better resource utilization.
 
 ## Overview
 
-Async nodes allow ComfyUI to:
+Async nodes allow Hanzo Studio to:
 - Execute I/O operations without blocking
 - Run multiple nodes concurrently
 - Provide real-time progress updates

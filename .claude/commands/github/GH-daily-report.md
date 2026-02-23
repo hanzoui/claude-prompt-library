@@ -1,10 +1,10 @@
-Analyze the top issues and PRs from these ComfyUI ecosystem repositories and create a morning briefing:
+Analyze the top issues and PRs from these Hanzo Studio ecosystem repositories and create a morning briefing:
 
-- comfyanonymous/ComfyUI
-- Comfy-Org/ComfyUI_frontend  
-- Comfy-Org/desktop
-- Comfy-Org/rfcs
-- Comfy-Org/comfy-cli
+- hanzoai/studio
+- hanzoui/studio_frontend  
+- hanzoui/desktop
+- hanzoui/rfcs
+- hanzoui/cli
 
 For each repository:
 1. Use gh to fetch recent open issues: gh issue list --repo <owner/repo> --limit 20 --state open
@@ -16,7 +16,7 @@ For each repository:
 
 Create a concise morning briefing with:
 
-## ComfyUI Ecosystem Daily Digest
+## Hanzo Studio Ecosystem Daily Digest
 
 ### Critical Issues
 - Any bugs blocking core functionality

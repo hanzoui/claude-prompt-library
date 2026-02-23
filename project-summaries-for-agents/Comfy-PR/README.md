@@ -2,11 +2,11 @@
 
 ## Repository Overview
 
-**Purpose**: Comfy-PR is an automated system that helps ComfyUI Custom Node authors publish their nodes to the [Comfy Registry](https://registry.comfy.org/). It automatically creates pull requests to add necessary configuration files and GitHub Actions workflows to custom node repositories.
+**Purpose**: Comfy-PR is an automated system that helps Hanzo Studio Custom Node authors publish their nodes to the [Comfy Registry](https://registry.hanzo.ai/). It automatically creates pull requests to add necessary configuration files and GitHub Actions workflows to custom node repositories.
 
-**Repository**: [Comfy-Org/Comfy-PR](https://github.com/Comfy-Org/Comfy-PR)  
+**Repository**: [hanzoui/pr](https://github.com/hanzoui/pr)  
 **Homepage**: https://comfy-pr.vercel.app/  
-**Description**: Automated PR creation system for growing the ComfyUI community by streamlining custom node publishing  
+**Description**: Automated PR creation system for growing the Hanzo Studio community by streamlining custom node publishing  
 **Created**: May 18, 2024  
 **License**: ISC  
 
@@ -22,7 +22,7 @@
 
 ### Key Dependencies
 - **GitHub Integration**: Octokit v4 for GitHub API interactions
-- **CLI Tools**: comfy-cli (Python) for node operations
+- **CLI Tools**: hanzo-cli (Python) for node operations
 - **Process Management**: zx v8 for shell command execution
 - **Communication**: Slack Web API, Gmail integration via Google APIs
 - **Development**: Vitest for testing, ESLint/Prettier for code quality
@@ -305,8 +305,8 @@ docker compose build      # Build containers
 
 ## Resources & Links
 
-- **Comfy Registry**: https://registry.comfy.org/
+- **Comfy Registry**: https://registry.hanzo.ai/
 - **Dashboard**: https://comfy-pr.vercel.app/
-- **Documentation**: https://docs.comfy.org/
+- **Documentation**: https://docs.hanzo.ai/
 - **Discord**: Join server and contact robinken
-- **CLI Tool**: `pip install comfy-cli`
+- **CLI Tool**: `pip install hanzo-cli`

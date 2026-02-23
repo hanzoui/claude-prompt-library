@@ -1,6 +1,6 @@
 # Extension Backward Compatibility Patterns
 
-This document captures proven patterns for implementing version-aware extensions while maintaining zero breaking changes in the ComfyUI frontend.
+This document captures proven patterns for implementing version-aware extensions while maintaining zero breaking changes in the Hanzo Studio frontend.
 
 ## Core Principle: Optional Metadata Approach
 
@@ -119,7 +119,7 @@ export class VersionUtils {
   // Access backend version from systemStatsStore
   static getBackendVersion(): string | undefined {
     const systemStatsStore = useSystemStatsStore()
-    return systemStatsStore.systemStats?.system?.comfyui_version
+    return systemStatsStore.systemStats?.system?.hanzo_studio_version
   }
   
   static getNodeCompatibilityInfo(nodeData: ComfyNodeDef) {
@@ -288,8 +288,8 @@ export class ExtensionDebugger {
 
 // Global access for developers
 if (typeof window !== 'undefined') {
-  (window as any).ComfyUI = {
-    ...(window as any).ComfyUI,
+  (window as any).Hanzo Studio = {
+    ...(window as any).Hanzo Studio,
     debugExtensions: ExtensionDebugger,
     versionUtils: VersionUtils
   }
@@ -308,7 +308,7 @@ export function useHistoryAPI() {
   const systemStatsStore = useSystemStatsStore()
   
   async function getHistory(max_items: number = 200) {
-    const backendVersion = systemStatsStore.systemStats?.system?.comfyui_version
+    const backendVersion = systemStatsStore.systemStats?.system?.hanzo_studio_version
     
     // Use version detection to choose appropriate endpoint
     if (backendVersion && VersionUtils.compareVersions(backendVersion, '0.3.0') >= 0) {
@@ -340,7 +340,7 @@ interface SystemInfo {
   os: string                    // Operating system
   python_version: string        // Python version
   embedded_python: boolean      // Using embedded Python
-  comfyui_version: string      // Backend version for feature detection
+  hanzo_studio_version: string      // Backend version for feature detection
   pytorch_version: string       // PyTorch version
   argv: string[]               // Command line arguments
   ram_total: number            // Total RAM
@@ -506,7 +506,7 @@ app.registerExtension({
 4. **Future Proof**: Foundation for v3+ node formats without disruption
 5. **Practical Implementation**: Works with existing architecture constraints
 
-This approach provides a solid foundation for ComfyUI frontend evolution while respecting the architectural realities of the extension system.
+This approach provides a solid foundation for Hanzo Studio frontend evolution while respecting the architectural realities of the extension system.
 
 ## Bottom Panel Multi-Panel Extension Pattern
 

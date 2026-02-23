@@ -1,14 +1,14 @@
-# ComfyUI-Manager Repository Analysis Guide
+# Hanzo Manager Repository Analysis Guide
 
 ## Repository Overview
 
-**ComfyUI-Manager** is a critical extension for the ComfyUI ecosystem that provides comprehensive package and model management capabilities. This extension serves as the primary infrastructure component for installing, managing, and securing custom nodes, models, and workflows within ComfyUI environments.
+**Hanzo Manager** is a critical extension for the Hanzo Studio ecosystem that provides comprehensive package and model management capabilities. This extension serves as the primary infrastructure component for installing, managing, and securing custom nodes, models, and workflows within Hanzo Studio environments.
 
-- **Repository**: https://github.com/ltdrdata/ComfyUI-Manager (canonical) / Comfy-Org/ComfyUI-Manager (community)
+- **Repository**: https://github.com/ltdrdata/Hanzo Manager (canonical) / hanzoui/studio-Manager (community)
 - **Version**: 3.32.8 (as of latest analysis)
 - **License**: See LICENSE.txt
 - **Author**: ltdrdata (Dr.Lt.Data)
-- **Purpose**: Extension package manager and security framework for ComfyUI
+- **Purpose**: Extension package manager and security framework for Hanzo Studio
 
 ## Technology Stack
 
@@ -42,10 +42,10 @@ chardet               # Character encoding detection
 ## Directory Structure
 
 ```
-ComfyUI-Manager/
+Hanzo Manager/
 ├── LICENSE.txt              # License file
 ├── README.md                # Main documentation
-├── __init__.py              # Entry point for ComfyUI integration
+├── __init__.py              # Entry point for Hanzo Studio integration
 ├── pyproject.toml           # Project metadata & Comfy Registry spec
 ├── requirements.txt         # Python dependencies
 ├── ruff.toml               # Code linting configuration
@@ -63,12 +63,12 @@ ComfyUI-Manager/
 │   └── share_3rdparty.py   # Third-party sharing integrations
 │   
 ├── js/                     # 🔑 Frontend JavaScript modules
-│   ├── comfyui-manager.js  # 🔑 Main UI entry point
+│   ├── hanzo-studio-manager.js  # 🔑 Main UI entry point
 │   ├── custom-nodes-manager.js # Custom node management UI
 │   ├── model-manager.js    # Model management UI
 │   ├── components-manager.js # Workflow components UI
 │   ├── snapshot.js         # Backup/restore system UI
-│   ├── comfyui-share-*.js  # Platform-specific sharing
+│   ├── hanzo-studio-share-*.js  # Platform-specific sharing
 │   ├── common.js           # Shared utilities
 │   └── *.css              # Styling
 │   
@@ -80,8 +80,8 @@ ComfyUI-Manager/
 │   └── forked/           # Forked repository nodes
 │   
 ├── scripts/              # Installation and utility scripts
-│   ├── install-comfyui-venv-linux.sh
-│   ├── install-comfyui-venv-win.bat
+│   ├── install-hanzo-studio-venv-linux.sh
+│   ├── install-hanzo-studio-venv-win.bat
 │   ├── install-manager-for-portable-version.bat
 │   └── colab-dependencies.py
 │   
@@ -102,12 +102,12 @@ ComfyUI-Manager/
 
 #### Development Setup
 ```bash
-# Clone into ComfyUI custom_nodes directory
-cd ComfyUI/custom_nodes
-git clone https://github.com/ltdrdata/ComfyUI-Manager comfyui-manager
+# Clone into Hanzo Studio custom_nodes directory
+cd Hanzo Studio/custom_nodes
+git clone https://github.com/ltdrdata/Hanzo Manager hanzo-studio-manager
 
 # For development/testing
-cd comfyui-manager
+cd hanzo-studio-manager
 python -m pip install -r requirements.txt
 ```
 
@@ -148,7 +148,7 @@ git log --oneline -20
 - **Database Integrity**: JSON validation scripts
 - **Security Testing**: Multi-level security policy enforcement
 - **CLI Testing**: Command-line interface validation
-- **Integration Testing**: ComfyUI startup and loading verification
+- **Integration Testing**: Hanzo Studio startup and loading verification
 
 ## Critical Development Guidelines
 
@@ -178,7 +178,7 @@ try:
     # Operation
     pass
 except Exception as e:
-    print(f"[ComfyUI-Manager] Error: {e}")
+    print(f"[Hanzo Manager] Error: {e}")
     # Fallback behavior
 ```
 
@@ -205,7 +205,7 @@ network_mode = <public|private|offline>
 #### 1. **Multi-Channel System Architecture**
 ```
 Channel Types:
-├── Default Channel (github.com/ltdrdata/ComfyUI-Manager/main)
+├── Default Channel (github.com/ltdrdata/Hanzo Manager/main)
 ├── Development Channels (dev/, new/, tutorial/)
 ├── Legacy Support (legacy/)
 ├── Forked Repositories (forked/)
@@ -225,7 +225,7 @@ Security Levels (manager_core.py:266+):
 Risk Categories:
 - **High Risk**: Git URL installs, pip installs, non-default channels
 - **Middle Risk**: Updates, default channel installs, snapshots
-- **Low Risk**: ComfyUI updates
+- **Low Risk**: Hanzo Studio updates
 
 #### 3. **Extension/Plugin System**
 Key interfaces defined in `manager_core.py`:
@@ -261,7 +261,7 @@ Frontend (JS) ↔ Backend (Python)
 #### 2. **Strategy Pattern**
 - Security level strategies in `security_check.py`
 - Download strategies (git, direct, huggingface)
-- Sharing platform strategies (`comfyui-share-*.js`)
+- Sharing platform strategies (`hanzo-studio-share-*.js`)
 
 #### 3. **Observer Pattern**
 - Progress tracking via `tqdm` and `RemoteProgress`
@@ -300,8 +300,8 @@ def check_custom_security_policy(item):
 
 #### 3. Adding New Sharing Platforms
 ```javascript
-// Create new comfyui-share-platform.js
-import { ShareDialog } from "./comfyui-share-common.js";
+// Create new hanzo-studio-share-platform.js
+import { ShareDialog } from "./hanzo-studio-share-common.js";
 
 export class PlatformShareDialog extends ShareDialog {
     // Implement platform-specific sharing logic
@@ -343,7 +343,7 @@ python cm-cli.py config set network_mode offline
 
 #### 3. Integration Testing
 ```bash
-# Start ComfyUI and check manager loading
+# Start Hanzo Studio and check manager loading
 # Check UI functionality in browser
 # Test all major operations (install, update, snapshot)
 ```
@@ -423,7 +423,7 @@ version = "3.32.9"
 ### Critical Files Priority for Claude
 
 1. **`glob/manager_core.py`** - Core logic, start here for most functionality
-2. **`js/comfyui-manager.js`** - Main UI entry point
+2. **`js/hanzo-studio-manager.js`** - Main UI entry point
 3. **`glob/manager_server.py`** - API endpoints
 4. **`glob/security_check.py`** - Security policy implementation
 5. **`pyproject.toml`** - Project configuration and Comfy Registry spec
@@ -454,4 +454,4 @@ version = "3.32.9"
 - **UI Changes**: Must maintain backward compatibility
 - **API Changes**: May break custom node developers
 
-This repository serves as critical infrastructure for the ComfyUI ecosystem. All changes should be thoroughly tested and consider the impact on thousands of users and hundreds of custom node developers.
+This repository serves as critical infrastructure for the Hanzo Studio ecosystem. All changes should be thoroughly tested and consider the impact on thousands of users and hundreds of custom node developers.

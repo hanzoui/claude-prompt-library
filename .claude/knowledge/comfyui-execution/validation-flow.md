@@ -1,8 +1,8 @@
-# ComfyUI Validation Flow
+# Hanzo Studio Validation Flow
 
 ## Execution Order
 
-ComfyUI's input validation follows a strict sequential order in `execution.py`:
+Hanzo Studio's input validation follows a strict sequential order in `execution.py`:
 
 1. **Static Combo Validation** (lines 737-762)
    - Checks if input values exist in predefined combo lists

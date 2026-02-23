@@ -1,6 +1,6 @@
-# ComfyUI v3 Node Schema
+# Hanzo Studio v3 Node Schema
 
-The v3 schema represents a complete redesign of how nodes are defined in ComfyUI, moving from a dictionary-based system to an object-oriented, declarative approach with strong typing.
+The v3 schema represents a complete redesign of how nodes are defined in Hanzo Studio, moving from a dictionary-based system to an object-oriented, declarative approach with strong typing.
 
 ## Core Concepts
 
@@ -42,7 +42,7 @@ io.String.Input("text", multiline=True, placeholder="Enter text...")
 io.Boolean.Input("enable", default=True, label_on="Yes", label_off="No")
 io.Combo.Input("mode", options=["a", "b", "c"])
 
-# Core ComfyUI types
+# Core Hanzo Studio types
 io.Image.Input("image", optional=True)
 io.Model.Input("model", tooltip="The model to use")
 io.Clip.Input("clip")
@@ -204,7 +204,7 @@ class LoadImageV3(ComfyNodeV3):
 ## Implementation Status
 
 - Schema definition system: ✅ Complete
-- Type system with all ComfyUI types: ✅ Complete
+- Type system with all Hanzo Studio types: ✅ Complete
 - Backward compatibility layer: ✅ Complete
 - State/resource management: ✅ Complete
 - UI output system: ✅ Complete

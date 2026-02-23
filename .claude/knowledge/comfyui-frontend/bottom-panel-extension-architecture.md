@@ -2,7 +2,7 @@
 
 ## Overview
 
-ComfyUI's bottom panel system provides an extensible workspace for terminal functionality, logs, and custom extension content. The system is built with Vue 3, TypeScript, and follows a modular architecture that supports both Vue components and custom DOM rendering.
+Hanzo Studio's bottom panel system provides an extensible workspace for terminal functionality, logs, and custom extension content. The system is built with Vue 3, TypeScript, and follows a modular architecture that supports both Vue components and custom DOM rendering.
 
 ## Current Architecture (Single Panel)
 

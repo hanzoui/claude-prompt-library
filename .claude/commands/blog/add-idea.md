@@ -61,7 +61,7 @@ Output:
 ## How We Reduced Node Editor Render Time by 80%
 - **Priority**: high
 - **Added**: 2024-01-15
-- **Projects**: comfyui-frontend, node-editor-performance
+- **Projects**: hanzo-studio-frontend, node-editor-performance
 - **Description**: Deep dive into performance optimizations for node editor rendering
 - **Potential Angle**: Step-by-step optimization journey with benchmarks
 - **Estimated Effort**: Deep-dive
@@ -76,7 +76,7 @@ Output:
 ## Implementing Vim Mode: A Technical Journey
 - **Priority**: medium
 - **Added**: 2024-01-15
-- **Projects**: comfyui-frontend
+- **Projects**: hanzo-studio-frontend
 - **Description**: How we added full vim keybinding support to our visual editor
 - **Potential Angle**: State machine design and handling complex key combinations
 - **Estimated Effort**: Medium

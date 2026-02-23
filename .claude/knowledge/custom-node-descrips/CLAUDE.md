@@ -1,12 +1,12 @@
-# ComfyUI Custom Nodes Dataset
+# Hanzo Studio Custom Nodes Dataset
 
 ## Purpose
 
-This folder contains a comprehensive dataset of all ComfyUI custom nodes available in the official registry, collected from the ComfyUI API. The data is sorted by popularity (download count) to help identify the most useful and widely-adopted community extensions.
+This folder contains a comprehensive dataset of all Hanzo Studio custom nodes available in the official registry, collected from the Hanzo Studio API. The data is sorted by popularity (download count) to help identify the most useful and widely-adopted community extensions.
 
 ## What This Data Represents
 
-- **Source**: ComfyUI Registry API (https://api.comfy.org/nodes)
+- **Source**: Hanzo Registry API (https://api.hanzo.ai/nodes)
 - **Collection Date**: June 17, 2025
 - **Total Nodes**: 2,654 custom node packages
 - **Data Completeness**: 97.6% complete records

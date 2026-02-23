@@ -1,18 +1,18 @@
-# ComfyUI-Copilot Repository Guide
+# Hanzo Studio-Copilot Repository Guide
 
 ## Repository Overview
 
-**ComfyUI-Copilot** is an AI-powered intelligent assistant for ComfyUI that simplifies and enhances the AI algorithm debugging and deployment process through natural language interactions. Built by Alibaba International Digital Commerce (AIDC-AI), it provides intuitive node recommendations, workflow building aids, and model querying services.
+**Hanzo Studio-Copilot** is an AI-powered intelligent assistant for Hanzo Studio that simplifies and enhances the AI algorithm debugging and deployment process through natural language interactions. Built by Alibaba International Digital Commerce (AIDC-AI), it provides intuitive node recommendations, workflow building aids, and model querying services.
 
-- **Repository**: https://github.com/AIDC-AI/ComfyUI-Copilot
+- **Repository**: https://github.com/AIDC-AI/Hanzo Studio-Copilot
 - **Current Version**: 1.3.3
 - **License**: MIT
 - **Language Support**: Python 3.10+, TypeScript/React
-- **Type**: ComfyUI Custom Node Extension
+- **Type**: Hanzo Studio Custom Node Extension
 
 ## Core Purpose
 
-ComfyUI-Copilot serves as an intelligent assistant that:
+Hanzo Studio-Copilot serves as an intelligent assistant that:
 - Lowers barriers to entry with natural language interaction
 - Provides AI-driven node suggestions and workflow implementations  
 - Offers real-time assistance for development challenges
@@ -22,12 +22,12 @@ ComfyUI-Copilot serves as an intelligent assistant that:
 ## Technology Stack
 
 ### Backend (Python)
-- **Framework**: Integrated with ComfyUI's server system (aiohttp)
+- **Framework**: Integrated with Hanzo Studio's server system (aiohttp)
 - **Core Dependencies**: 
   - `asyncio` for async operations
   - `aiohttp` for web server integration
-  - ComfyUI's `server` and `folder_paths` modules
-- **Architecture**: Custom node extension that extends ComfyUI's prompt server
+  - Hanzo Studio's `server` and `folder_paths` modules
+- **Architecture**: Custom node extension that extends Hanzo Studio's prompt server
 
 ### Frontend (React/TypeScript)
 - **Framework**: React 18.2.0 with TypeScript 5.2.2
@@ -50,7 +50,7 @@ ComfyUI-Copilot serves as an intelligent assistant that:
 ## Directory Structure
 
 ```
-ComfyUI-Copilot/
+Hanzo Studio-Copilot/
 ├── __init__.py                    # Main entry point, web route registration
 ├── pyproject.toml                 # Python project configuration
 ├── service/                       # Backend services
@@ -80,13 +80,13 @@ ComfyUI-Copilot/
 ## Critical Development Guidelines
 
 ### Code Standards
-- **Python**: Follow ComfyUI extension patterns, use async/await for I/O operations
+- **Python**: Follow Hanzo Studio extension patterns, use async/await for I/O operations
 - **TypeScript**: Strict typing enabled, prefer interfaces over types
 - **React**: Functional components with hooks, context for state management
 - **CSS**: Scoped Tailwind classes, component-specific styling
 
 ### Architecture Principles
-- **Extension Integration**: Deep integration with ComfyUI's canvas and API system
+- **Extension Integration**: Deep integration with Hanzo Studio's canvas and API system
 - **State Management**: Context-based with localStorage persistence
 - **API Design**: Streaming responses for real-time chat experience
 - **Performance**: Lazy loading, code splitting, memoization for heavy operations
@@ -128,8 +128,8 @@ App (Root)
 ### Backend Architecture
 
 #### Integration Pattern
-- **Extension Model**: Registers as ComfyUI custom node
-- **Web Routes**: Extends ComfyUI's PromptServer with custom endpoints
+- **Extension Model**: Registers as Hanzo Studio custom node
+- **Web Routes**: Extends Hanzo Studio's PromptServer with custom endpoints
 - **Session Management**: In-memory session storage with message history
 
 #### Key Endpoints
@@ -137,7 +137,7 @@ App (Root)
 - `/workspace/fetch_messages_by_id` - Message history retrieval
 - `/api/chat/invoke` - Advanced chat with image support
 
-### ComfyUI Integration
+### Hanzo Studio Integration
 
 #### Deep Integration Features
 - **Canvas Integration**: Real-time node selection events
@@ -166,11 +166,11 @@ npm run build:css            # Build Tailwind CSS
 node scripts/post-build.js   # Post-build processing
 ```
 
-#### Installation as ComfyUI Extension
+#### Installation as Hanzo Studio Extension
 ```bash
-cd ComfyUI/custom_nodes
-git clone https://github.com/AIDC-AI/ComfyUI-Copilot
-# Or install via ComfyUI Manager
+cd Hanzo Studio/custom_nodes
+git clone https://github.com/AIDC-AI/Hanzo Studio-Copilot
+# Or install via Hanzo Manager
 ```
 
 ### Code Quality Tools
@@ -180,7 +180,7 @@ git clone https://github.com/AIDC-AI/ComfyUI-Copilot
 - **Git Hooks**: Pre-commit formatting (setupGitHooks.js)
 
 ### Testing Strategy
-- **Manual Testing**: Extensive manual testing with ComfyUI integration
+- **Manual Testing**: Extensive manual testing with Hanzo Studio integration
 - **Browser Testing**: Cross-browser compatibility verification
 - **Performance Testing**: Bundle size optimization and loading performance
 
@@ -211,14 +211,14 @@ git clone https://github.com/AIDC-AI/ComfyUI-Copilot
 
 1. **Add JSON file** to `public/workflows/`
 2. **Update template loading** in `conversation_service.py`
-3. **Test workflow compatibility** with ComfyUI
+3. **Test workflow compatibility** with Hanzo Studio
 
 ## Integration Points
 
-### ComfyUI Extension System
-- **Registration**: Uses ComfyUI's sidebar extension API
+### Hanzo Studio Extension System
+- **Registration**: Uses Hanzo Studio's sidebar extension API
 - **Event System**: Custom events for node selection and canvas interaction
-- **API Access**: Full access to ComfyUI's internal APIs and graph manipulation
+- **API Access**: Full access to Hanzo Studio's internal APIs and graph manipulation
 
 ### External APIs
 - **Chat Service**: Configurable API endpoints for different environments
@@ -256,7 +256,7 @@ git clone https://github.com/AIDC-AI/ComfyUI-Copilot
 - **Code Splitting**: Strategic lazy loading and dynamic imports
 - **Bundle Analysis**: Optimized vendor chunks for common dependencies
 - **Memory Management**: Efficient message list rendering and state cleanup
-- **Theme Switching**: Optimized CSS-in-JS with ComfyUI theme integration
+- **Theme Switching**: Optimized CSS-in-JS with Hanzo Studio theme integration
 
 ### Backend Optimizations
 - **Async Operations**: Non-blocking I/O for all network operations
@@ -272,9 +272,9 @@ git clone https://github.com/AIDC-AI/ComfyUI-Copilot
 - **Dependency Conflicts**: Use `npm install --legacy-peer-deps` if needed
 - **Tailwind CSS**: Run `npm run build:css` if styles not updating
 
-#### ComfyUI Integration Issues
+#### Hanzo Studio Integration Issues
 - **Extension Loading**: Verify custom_nodes directory structure
-- **API Conflicts**: Check for port conflicts on ComfyUI server
+- **API Conflicts**: Check for port conflicts on Hanzo Studio server
 - **Theme Issues**: Ensure proper CSS injection for theme switching
 
 #### Development Issues
@@ -286,21 +286,21 @@ git clone https://github.com/AIDC-AI/ComfyUI-Copilot
 - **Console Logs**: Extensive logging in development mode
 - **Network Tab**: Monitor streaming API responses
 - **React DevTools**: Component state and context inspection
-- **ComfyUI Console**: Backend error logging and debugging
+- **Hanzo Studio Console**: Backend error logging and debugging
 
 ## Meta-Information for AI Assistants
 
 ### Priority Files for Understanding
 1. **`__init__.py`** - Entry point and web route setup
-2. **`ui/src/main.tsx`** - Frontend initialization and ComfyUI integration
+2. **`ui/src/main.tsx`** - Frontend initialization and Hanzo Studio integration
 3. **`ui/src/context/ChatContext.tsx`** - Core state management
 4. **`service/conversation_service.py`** - Backend API implementation
 5. **`ui/package.json`** - Dependencies and build scripts
 6. **`ui/vite.config.ts`** - Build configuration and optimization
 
 ### Key Architectural Decisions
-- **Hybrid Architecture**: Python backend with React frontend for optimal ComfyUI integration
-- **Extension Pattern**: Non-intrusive integration preserving ComfyUI functionality
+- **Hybrid Architecture**: Python backend with React frontend for optimal Hanzo Studio integration
+- **Extension Pattern**: Non-intrusive integration preserving Hanzo Studio functionality
 - **Real-time Communication**: Streaming architecture for responsive user experience
 - **Modular Design**: Component-based architecture enabling easy feature additions
 
@@ -310,4 +310,4 @@ git clone https://github.com/AIDC-AI/ComfyUI-Copilot
 - **UI Components**: Use existing hooks and context patterns
 - **Workflow Templates**: JSON files with proper validation
 
-This guide provides comprehensive information for AI agents to understand and work effectively with the ComfyUI-Copilot codebase, focusing on practical development tasks while maintaining the project's architectural integrity.
+This guide provides comprehensive information for AI agents to understand and work effectively with the Hanzo Studio-Copilot codebase, focusing on practical development tasks while maintaining the project's architectural integrity.

@@ -103,7 +103,7 @@ Hanzo Manager/
 #### Development Setup
 ```bash
 # Clone into Hanzo Studio custom_nodes directory
-cd Hanzo Studio/custom_nodes
+cd HanzoStudio/custom_nodes
 git clone https://github.com/ltdrdata/Hanzo Manager hanzo-studio-manager
 
 # For development/testing

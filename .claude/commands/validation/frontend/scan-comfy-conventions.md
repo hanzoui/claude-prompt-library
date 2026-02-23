@@ -1,6 +1,6 @@
 # Scan Hanzo Frontend Conventions
 
-I need to check Hanzo Studio-specific frontend conventions and patterns for: $ARGUMENTS
+I need to check HanzoStudio-specific frontend conventions and patterns for: $ARGUMENTS
 
 ## Your Task
 

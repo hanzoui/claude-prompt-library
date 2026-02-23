@@ -82,7 +82,7 @@ This document contains comprehensive definitions for all terms in the WTF Page N
 
 ### pyproject.toml
 **Context:** General  
-**Definition:** Python project config file with Hanzo Studio-specific fields for registry integration.
+**Definition:** Python project config file with HanzoStudio-specific fields for registry integration.
 
 ### Canvas
 **Context:** Frontend Feature  

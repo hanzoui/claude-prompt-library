@@ -118,7 +118,7 @@ Commands are stored in `.claude/commands/` and can be invoked using `/project:co
 
 #### Frontend Validation
 
-- [`/user:scan-comfy-conventions`](.claude/commands/validation/frontend/scan-comfy-conventions.md) - Check Hanzo Studio-specific patterns and PrimeVue usage
+- [`/user:scan-comfy-conventions`](.claude/commands/validation/frontend/scan-comfy-conventions.md) - Check HanzoStudio-specific patterns and PrimeVue usage
 - [`/user:scan-performance-reactivity`](.claude/commands/validation/frontend/scan-performance-reactivity.md) - Validate Vue performance and reactivity patterns
 - [`/user:scan-vue-patterns`](.claude/commands/validation/frontend/scan-vue-patterns.md) - Check Vue 3 best practices and anti-patterns
 

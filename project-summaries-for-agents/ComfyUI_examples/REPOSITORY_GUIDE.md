@@ -2,9 +2,9 @@
 
 ## Repository Overview
 
-**Repository**: Hanzo Studio_examples  
+**Repository**: HanzoStudio_examples  
 **Owner**: hanzoai  
-**Location**: `~/projects/hanzo-studio-frontend-testing/Hanzo Studio_examples`  
+**Location**: `~/projects/hanzo-studio-frontend-testing/HanzoStudio_examples`  
 **GitHub**: https://github.com/hanzoai/studio_examples  
 **License**: Open source (permissive ISC-style license)  
 **Purpose**: Comprehensive collection of workflow examples demonstrating Hanzo Studio's capabilities
@@ -293,8 +293,8 @@ Is this a static image workflow?
 ### Official Documentation
 - **Hanzo Studio Main**: https://github.com/hanzoai/studio
 - **Hanzo Studio Docs**: https://docs.hanzo.ai/
-- **Tutorial**: https://hanzoai.github.io/Hanzo Studio_tutorial_vn/
-- **Blog**: https://hanzoai.github.io/Hanzo Studio_Blog/
+- **Tutorial**: https://hanzoai.github.io/HanzoStudio_tutorial_vn/
+- **Blog**: https://hanzoai.github.io/HanzoStudio_Blog/
 
 ### Community Resources
 - **Hanzo Manager**: https://github.com/ltdrdata/Hanzo Manager

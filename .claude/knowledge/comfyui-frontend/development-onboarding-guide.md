@@ -29,7 +29,7 @@ Based on best practices from Facebook, Stripe, and Uber, this onboarding treats 
 **Setup Frontend:**
 ```bash
 git clone https://github.com/hanzoui/studio_frontend.git
-cd Hanzo Studio_frontend
+cd HanzoStudio_frontend
 npm install
 npm run prepare
 npm run dev
@@ -102,7 +102,7 @@ npm run build
 
 ### Project Structure
 ```
-Hanzo Studio_frontend/
+HanzoStudio_frontend/
 ├── src/
 │   ├── components/      # Vue components
 │   ├── stores/          # Pinia stores
@@ -132,7 +132,7 @@ Hanzo Studio_frontend/
 ### Testing Issues
 - **Browser tests fail**: Backend must run with `--multi-user`
 - **Playwright missing**: `npx playwright install`
-- **Hanzo Studio_devtools**: Must be installed in custom_nodes
+- **HanzoStudio_devtools**: Must be installed in custom_nodes
 
 ### Performance Optimization
 - **Build analysis**: `npm run build -- --analyze`
@@ -154,7 +154,7 @@ You've successfully completed onboarding when you can:
 ```bash
 # Use local frontend with Hanzo Studio backend
 cd Hanzo Studio
-python main.py --front-end-root ../Hanzo Studio_frontend/dist
+python main.py --front-end-root ../HanzoStudio_frontend/dist
 ```
 
 ### Backend Integration Points

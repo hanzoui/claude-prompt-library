@@ -189,7 +189,7 @@ pip install -e .
 
 6. **Post-Merge**:
    - Version bump triggers automatic PyPI release
-   - Add translations in Hanzo Studio_frontend repo
+   - Add translations in HanzoStudio_frontend repo
 
 ### Testing Templates
 ```bash
@@ -197,7 +197,7 @@ pip install -e .
 python scripts/validate_templates.py
 
 # Test in frontend
-cd ../Hanzo Studio_frontend
+cd ../HanzoStudio_frontend
 echo "DISABLE_TEMPLATES_PROXY=true" >> .env
 cp -r ../workflow_templates/templates public/
 npm run dev

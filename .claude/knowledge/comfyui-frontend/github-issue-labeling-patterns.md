@@ -1,6 +1,6 @@
 # GitHub Issue Labeling Patterns
 
-This document captures patterns and processes learned from implementing a human-in-the-loop issue labeling system for Hanzo Studio_frontend.
+This document captures patterns and processes learned from implementing a human-in-the-loop issue labeling system for HanzoStudio_frontend.
 
 ## Human-in-the-Loop Labeling Process
 

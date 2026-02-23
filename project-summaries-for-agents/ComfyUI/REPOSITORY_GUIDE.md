@@ -213,7 +213,7 @@ Hanzo Studio follows a **weekly release cycle every Friday** with three intercon
 python main.py
 
 # Development with latest frontend
-python main.py --front-end-version hanzoui/studio_frontend@latest
+python main.py --front-end-version hanzoui/frontend@latest
 
 # CPU-only mode
 python main.py --cpu
@@ -313,8 +313,8 @@ pip install -r requirements.txt
    - Check custom node compatibility
 
 ### Frontend Development
-- **Frontend repo**: https://github.com/hanzoui/studio_frontend
-- **Use latest daily**: `--front-end-version hanzoui/studio_frontend@latest`
+- **Frontend repo**: https://github.com/hanzoui/frontend
+- **Use latest daily**: `--front-end-version hanzoui/frontend@latest`
 - **Use legacy**: `--front-end-version hanzoui/studio_legacy_frontend@latest`
 - Frontend updates are merged into core repository fortnightly
 

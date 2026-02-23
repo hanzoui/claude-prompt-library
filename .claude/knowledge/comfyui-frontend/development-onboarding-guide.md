@@ -28,7 +28,7 @@ Based on best practices from Facebook, Stripe, and Uber, this onboarding treats 
 
 **Setup Frontend:**
 ```bash
-git clone https://github.com/hanzoui/studio_frontend.git
+git clone https://github.com/hanzoui/frontend.git
 cd HanzoStudio_frontend
 npm install
 npm run prepare

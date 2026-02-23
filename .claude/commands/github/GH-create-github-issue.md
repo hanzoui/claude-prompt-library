@@ -11,7 +11,7 @@ For this task: $ARGUMENTS
 
 2. **Read Core Documentation:**
    - https://deepwiki.com/hanzoai/studio (core Hanzo Studio)
-   - https://deepwiki.com/hanzoui/studio_frontend (frontend architecture)
+   - https://deepwiki.com/hanzoui/frontend (frontend architecture)
    - https://deepwiki.com/hanzoui/manager (custom node manager)
    - https://deepwiki.com/hanzoui/litegraph.js (graph canvas system)
    - ~/projects/comfy-testing-environment/

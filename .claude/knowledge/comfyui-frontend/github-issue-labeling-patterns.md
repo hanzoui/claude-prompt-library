@@ -22,7 +22,7 @@ This creates a valuable dataset for:
 
 1. **Fetch all open issues**:
    ```bash
-   gh issue list --repo hanzoui/studio_frontend --state open --limit 100 --json number,title,url,labels
+   gh issue list --repo hanzoui/frontend --state open --limit 100 --json number,title,url,labels
    ```
 
 2. **For each issue**:

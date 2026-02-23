@@ -1,6 +1,6 @@
 # Hanzo Frontend Repository Guide
 
-**Repository:** [hanzoui/studio_frontend](https://github.com/hanzoui/studio_frontend)  
+**Repository:** [hanzoui/frontend](https://github.com/hanzoui/frontend)  
 **License:** GPL-3.0-only  
 **Version:** 1.22.2 (Check package.json for current version)  
 **Local Path:** `~/projects/hanzo-studio-frontend-testing/HanzoStudio_frontend-clone`
@@ -26,7 +26,7 @@ HanzoStudio_frontend is the official frontend implementation for Hanzo Studio, a
 - **2-week release cycles**: 1 week development, 1 week feature freeze
 - **Nightly releases**: Published daily to GitHub releases
 - **Overlapping development**: Next version development starts during feature freeze
-- **Version format**: `--front-end-version hanzoui/studio_frontend@latest`
+- **Version format**: `--front-end-version hanzoui/frontend@latest`
 
 ## Technology Stack
 

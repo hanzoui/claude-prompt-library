@@ -131,7 +131,7 @@ jq '[.[] | select(.labels | map(.name) | contains(["bounty"]) | not)]' raw_issue
 ```bash
 # Process multiple repos simultaneously  
 {
-  analyze_repo "hanzoui/studio_frontend" &
+  analyze_repo "hanzoui/frontend" &
   analyze_repo "hanzoai/studio" &
   wait
 }

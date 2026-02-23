@@ -31,7 +31,7 @@ You should exhaust all available resources to understand the repository:
 
 #### 1. Check for DeepWiki Documentation
 - Visit https://deepwiki.com/[repo-owner]/[repo-name] to see if comprehensive documentation exists
-- Example: https://deepwiki.com/hanzoui/studio_frontend for the hanzoui/studio_frontend repo
+- Example: https://deepwiki.com/hanzoui/frontend for the hanzoui/frontend repo
 - Extract all available architectural and development information
 
 #### 2. Analyze Local Repository Structure

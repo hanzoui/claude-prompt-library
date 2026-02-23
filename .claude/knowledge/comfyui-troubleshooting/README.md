@@ -1,6 +1,6 @@
-# ComfyUI Troubleshooting Knowledge Base
+# Hanzo Studio Troubleshooting Knowledge Base
 
-This folder contains documented solutions for common ComfyUI issues, hardware compatibility problems, and workarounds discovered through debugging sessions.
+This folder contains documented solutions for common Hanzo Studio issues, hardware compatibility problems, and workarounds discovered through debugging sessions.
 
 ## Contents
 
@@ -10,7 +10,7 @@ This folder contains documented solutions for common ComfyUI issues, hardware co
 ## Purpose
 
 This knowledge base serves to:
-1. Document hard-learned lessons from troubleshooting ComfyUI
+1. Document hard-learned lessons from troubleshooting Hanzo Studio
 2. Provide quick reference for known issues and their solutions
 3. Track hardware/software compatibility problems
 4. Share community-discovered workarounds

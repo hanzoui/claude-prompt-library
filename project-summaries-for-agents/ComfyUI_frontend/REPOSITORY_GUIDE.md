@@ -1,13 +1,13 @@
-# ComfyUI Frontend Repository Guide
+# Hanzo Frontend Repository Guide
 
-**Repository:** [Comfy-Org/ComfyUI_frontend](https://github.com/Comfy-Org/ComfyUI_frontend)  
+**Repository:** [hanzoui/studio_frontend](https://github.com/hanzoui/studio_frontend)  
 **License:** GPL-3.0-only  
 **Version:** 1.22.2 (Check package.json for current version)  
-**Local Path:** `~/projects/comfyui-frontend-testing/ComfyUI_frontend-clone`
+**Local Path:** `~/projects/hanzo-studio-frontend-testing/Hanzo Studio_frontend-clone`
 
 ## Repository Overview
 
-ComfyUI_frontend is the official frontend implementation for ComfyUI, a powerful node-based interface for AI image generation workflows. It's a sophisticated Vue 3 application that provides a visual graph editor for creating and executing complex image generation pipelines.
+Hanzo Studio_frontend is the official frontend implementation for Hanzo Studio, a powerful node-based interface for AI image generation workflows. It's a sophisticated Vue 3 application that provides a visual graph editor for creating and executing complex image generation pipelines.
 
 ### Purpose and Functionality
 - **Visual Node Editor**: LiteGraph.js-based canvas for creating node workflows
@@ -26,7 +26,7 @@ ComfyUI_frontend is the official frontend implementation for ComfyUI, a powerful
 - **2-week release cycles**: 1 week development, 1 week feature freeze
 - **Nightly releases**: Published daily to GitHub releases
 - **Overlapping development**: Next version development starts during feature freeze
-- **Version format**: `--front-end-version Comfy-Org/ComfyUI_frontend@latest`
+- **Version format**: `--front-end-version hanzoui/studio_frontend@latest`
 
 ## Technology Stack
 
@@ -35,7 +35,7 @@ ComfyUI_frontend is the official frontend implementation for ComfyUI, a powerful
 - **TypeScript** (v5.4.5) for type safety
 - **Pinia** (v2.1.7) for state management
 - **PrimeVue** (v4.2.5) + TailwindCSS (v3.4.4) for UI
-- **LiteGraph.js** (@comfyorg/litegraph v0.16.1) for node editor
+- **LiteGraph.js** (@hanzoui/litegraph v0.16.1) for node editor
 - **Vite** (v5.4.19) for build tooling
 - **Vue-i18n** (v9.14.3) for internationalization
 
@@ -58,7 +58,7 @@ ComfyUI_frontend is the official frontend implementation for ComfyUI, a powerful
 ## Directory Structure
 
 ```
-ComfyUI_frontend/
+Hanzo Studio_frontend/
 ├── src/                          # Main application source
 │   ├── components/               # Vue components organized by feature
 │   │   ├── actionbar/           # Top action bar components
@@ -158,7 +158,7 @@ npm run prepare             # Install Git hooks
 
 ### Development Server Setup
 
-1. **Start ComfyUI backend** at `localhost:8188`
+1. **Start Hanzo Studio backend** at `localhost:8188`
 2. **Environment setup**: Copy `.env.example` to `.env` and configure
 3. **Run development server**: `npm run dev` 
 4. **Access**: `http://localhost:5173/`
@@ -170,7 +170,7 @@ npm run prepare             # Install Git hooks
 2. Run tests until passing: `npm run test:unit`, `npm run test:component`, `npm run test:browser`
 3. Run quality checks: `npm run typecheck`, `npm run lint`, `npm run format`
 4. Check README updates and documentation needs
-5. Consider external documentation updates at https://docs.comfy.org
+5. Consider external documentation updates at https://docs.hanzo.ai
 
 ## Critical Development Guidelines
 
@@ -262,7 +262,7 @@ const message = "Save"
 
 ### Extension System Architecture
 
-ComfyUI's extension system is central to its design:
+Hanzo Studio's extension system is central to its design:
 
 ```typescript
 // Extension registration pattern
@@ -719,4 +719,4 @@ Fixes #123
 
 ---
 
-This guide serves as the definitive reference for AI-assisted development in the ComfyUI frontend codebase, emphasizing the clean architecture, extensibility, and stability required for a platform supporting thousands of users and extensions.
+This guide serves as the definitive reference for AI-assisted development in the Hanzo Studio frontend codebase, emphasizing the clean architecture, extensibility, and stability required for a platform supporting thousands of users and extensions.

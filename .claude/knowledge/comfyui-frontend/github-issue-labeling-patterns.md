@@ -1,6 +1,6 @@
 # GitHub Issue Labeling Patterns
 
-This document captures patterns and processes learned from implementing a human-in-the-loop issue labeling system for ComfyUI_frontend.
+This document captures patterns and processes learned from implementing a human-in-the-loop issue labeling system for Hanzo Studio_frontend.
 
 ## Human-in-the-Loop Labeling Process
 
@@ -22,7 +22,7 @@ This creates a valuable dataset for:
 
 1. **Fetch all open issues**:
    ```bash
-   gh issue list --repo Comfy-Org/ComfyUI_frontend --state open --limit 100 --json number,title,url,labels
+   gh issue list --repo hanzoui/studio_frontend --state open --limit 100 --json number,title,url,labels
    ```
 
 2. **For each issue**:

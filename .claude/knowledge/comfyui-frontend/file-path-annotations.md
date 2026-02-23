@@ -1,8 +1,8 @@
-# ComfyUI File Path Annotations
+# Hanzo Studio File Path Annotations
 
 ## Temporary File Annotation Pattern
 
-ComfyUI uses a special annotation pattern in file paths to indicate temporary files that are part of the workflow execution:
+Hanzo Studio uses a special annotation pattern in file paths to indicate temporary files that are part of the workflow execution:
 
 ### Format
 ```
@@ -57,4 +57,4 @@ const convertBlobToFileAndSubmit = async (blob: Blob): Promise<string> => {
 }
 ```
 
-This pattern ensures proper handling of temporary files throughout the ComfyUI workflow lifecycle.
+This pattern ensures proper handling of temporary files throughout the Hanzo Studio workflow lifecycle.

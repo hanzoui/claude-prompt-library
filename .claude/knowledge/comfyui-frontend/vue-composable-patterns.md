@@ -1,4 +1,4 @@
-# Vue Composable Patterns in ComfyUI Frontend
+# Vue Composable Patterns in Hanzo Frontend
 
 ## VueUse Integration for Common UI Patterns
 
@@ -59,7 +59,7 @@ onClickOutside(
 ```
 
 #### Installation and Setup
-VueUse is already included in ComfyUI Frontend dependencies (`@vueuse/core v11.0.0`).
+VueUse is already included in Hanzo Frontend dependencies (`@vueuse/core v11.0.0`).
 
 #### Common Use Cases
 1. **Dropdown menus**: Close when clicking outside
@@ -89,7 +89,7 @@ stop()
 
 ### Other Useful VueUse Composables
 
-While we haven't explored all of these in depth, VueUse offers many composables that could simplify ComfyUI Frontend code:
+While we haven't explored all of these in depth, VueUse offers many composables that could simplify Hanzo Frontend code:
 
 - `useEventListener`: Better event handling with auto-cleanup
 - `useFocusTrap`: Trap focus within modals/dialogs

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Firebase Auth in ComfyUI makes eager network requests that can block offline usage or fail in regions with Firebase access restrictions (e.g., China). This document outlines the specific behaviors and proven solutions.
+Firebase Auth in Hanzo Studio makes eager network requests that can block offline usage or fail in regions with Firebase access restrictions (e.g., China). This document outlines the specific behaviors and proven solutions.
 
 ## Firebase Auth Request Triggers
 
@@ -177,4 +177,4 @@ export const useOfflineAuthStore = () => {
 
 ## Implementation Status
 
-As of v1.24.1, ComfyUI does not implement offline handling for Firebase Auth. The proposed solutions above are recommendations based on the discovered behaviors.
+As of v1.24.1, Hanzo Studio does not implement offline handling for Firebase Auth. The proposed solutions above are recommendations based on the discovered behaviors.

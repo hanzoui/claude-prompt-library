@@ -3,7 +3,7 @@
 ## Repository Overview
 
 **Repository**: Microsoft Visual Studio Code (Open Source)  
-**Location**: `~/projects/comfyui-frontend-testing/vscode`  
+**Location**: `~/projects/hanzo-studio-frontend-testing/vscode`  
 **Official Repository**: https://github.com/microsoft/vscode  
 **License**: MIT  
 **Version**: 1.99.0 (code-oss-dev)  

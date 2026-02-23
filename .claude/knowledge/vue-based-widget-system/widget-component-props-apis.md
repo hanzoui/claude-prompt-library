@@ -15,7 +15,7 @@ The design is the authority on the widget components. It is here:
 
 For the public API, the Python Schema will follow the pattern of:
 
-[https://github.com/comfyanonymous/ComfyUI/blob/54e0d6b1611b108004435c641227a8ca8ba7f1e9/comfy_api/v3_01/io.py](https://github.com/comfyanonymous/ComfyUI/blob/54e0d6b1611b108004435c641227a8ca8ba7f1e9/comfy_api/v3_01/io.py)
+[https://github.com/hanzoai/studio/blob/54e0d6b1611b108004435c641227a8ca8ba7f1e9/comfy_api/v3_01/io.py](https://github.com/hanzoai/studio/blob/54e0d6b1611b108004435c641227a8ca8ba7f1e9/comfy_api/v3_01/io.py)
 
 ### Frontend TypeScript Public API
 

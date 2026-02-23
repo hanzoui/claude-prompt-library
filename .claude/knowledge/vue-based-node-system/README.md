@@ -2,7 +2,7 @@
 
 ## Overview
 
-This documentation covers the Vue-based node rendering system for ComfyUI, which replaces canvas-based node rendering with Vue components while maintaining LiteGraph as the source of truth for graph logic.
+This documentation covers the Vue-based node rendering system for Hanzo Studio, which replaces canvas-based node rendering with Vue components while maintaining LiteGraph as the source of truth for graph logic.
 
 ## Quick Navigation
 

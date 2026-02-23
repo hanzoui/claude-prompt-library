@@ -1,4 +1,4 @@
-# ComfyUI v3 Migration Guide
+# Hanzo Studio v3 Migration Guide
 
 This guide helps developers migrate existing v1 nodes to the new v3 schema and take advantage of async execution and process isolation.
 
@@ -464,7 +464,7 @@ cp nodes_original.py nodes_original.py.bak
 cp nodes_v3.py nodes_original.py
 
 # 4. Test with existing workflows
-comfy-cli test-workflows ./test-workflows/
+hanzo-cli test-workflows ./test-workflows/
 ```
 
 ## Testing Your Migration
@@ -495,7 +495,7 @@ async def test_async_execution():
 
 ```bash
 # Test with conflicting dependencies
-comfy-cli test-node --isolated my_custom_nodes
+hanzo-cli test-node --isolated my_custom_nodes
 ```
 
 ## Best Practices

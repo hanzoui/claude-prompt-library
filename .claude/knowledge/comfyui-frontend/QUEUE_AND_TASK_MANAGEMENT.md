@@ -2,7 +2,7 @@
 
 ## Unified Delete API Pattern
 
-The ComfyUI frontend uses a unified pattern for deleting items from both queue and history:
+The Hanzo Studio frontend uses a unified pattern for deleting items from both queue and history:
 
 ```typescript
 // src/scripts/api.ts
@@ -32,7 +32,7 @@ get apiTaskType(): APITaskType {
 
 ## Context Menu UI Pattern for Task Deletion
 
-Task deletion in the ComfyUI frontend is exclusively exposed through a context menu (right-click) pattern:
+Task deletion in the Hanzo Studio frontend is exclusively exposed through a context menu (right-click) pattern:
 
 ### Implementation
 

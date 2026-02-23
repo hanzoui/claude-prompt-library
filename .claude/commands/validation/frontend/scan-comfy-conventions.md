@@ -1,10 +1,10 @@
-# Scan ComfyUI Frontend Conventions
+# Scan Hanzo Frontend Conventions
 
-I need to check ComfyUI-specific frontend conventions and patterns for: $ARGUMENTS
+I need to check Hanzo Studio-specific frontend conventions and patterns for: $ARGUMENTS
 
 ## Your Task
 
-Validate adherence to ComfyUI frontend conventions, PrimeVue patterns, and project-specific best practices.
+Validate adherence to Hanzo Studio frontend conventions, PrimeVue patterns, and project-specific best practices.
 
 ## Execution Steps
 
@@ -72,7 +72,7 @@ Validate adherence to ComfyUI frontend conventions, PrimeVue patterns, and proje
 ## Report Format
 
 ```
-## ComfyUI Convention Analysis
+## Hanzo Studio Convention Analysis
 
 ### Critical PrimeVue Migrations
 - [Component]: Using deprecated Dropdown

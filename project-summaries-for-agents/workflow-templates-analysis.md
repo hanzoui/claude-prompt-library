@@ -1,12 +1,12 @@
-# ComfyUI Workflow Templates Repository Analysis Guide
+# Hanzo Studio Workflow Templates Repository Analysis Guide
 
 ## Repository Overview
 
-**Purpose**: This repository hosts workflow templates for ComfyUI, providing a centralized collection of pre-configured AI generation workflows that users can import and execute directly in ComfyUI.
+**Purpose**: This repository hosts workflow templates for Hanzo Studio, providing a centralized collection of pre-configured AI generation workflows that users can import and execute directly in Hanzo Studio.
 
 **Repository Details**:
-- **URL**: https://github.com/Comfy-Org/workflow_templates
-- **PyPI Package**: https://pypi.org/project/comfyui-workflow-templates/
+- **URL**: https://github.com/hanzoui/workflow-templates
+- **PyPI Package**: https://pypi.org/project/hanzo-studio-workflow-templates/
 - **License**: MIT
 - **Created**: February 28, 2025
 - **Primary Language**: Python
@@ -26,7 +26,7 @@
 - Standard Python library for file operations and validation
 
 ### Distribution
-- **PyPI Package**: `comfyui-workflow-templates`
+- **PyPI Package**: `hanzo-studio-workflow-templates`
 - **Version**: 0.1.26 (actively maintained)
 - **Build System**: setuptools with pyproject.toml
 
@@ -39,7 +39,7 @@ workflow_templates/
 ├── README.md                 # Comprehensive template creation guide
 ├── pyproject.toml            # Python package configuration
 ├── setup.py                  # Package setup script
-├── comfyui_workflow_templates/
+├── hanzo_studio_workflow_templates/
 │   └── __init__.py          # Python package initialization
 ├── docs/                     # Documentation and specifications
 │   ├── SPEC.md              # Formal workflow template specification
@@ -66,7 +66,7 @@ python scripts/validate_templates.py
 pip install -e .
 
 # Install from PyPI
-pip install comfyui-workflow-templates
+pip install hanzo-studio-workflow-templates
 ```
 
 #### Package Management
@@ -98,7 +98,7 @@ python -m twine upload dist/*
 - **No spaces, dots, or special characters** in filenames
 
 #### Required Components
-1. **Workflow JSON**: Valid ComfyUI workflow with embedded model metadata
+1. **Workflow JSON**: Valid Hanzo Studio workflow with embedded model metadata
 2. **Thumbnail(s)**: At least one thumbnail matching the naming pattern
 3. **index.json Entry**: Metadata entry in the appropriate category
 
@@ -128,7 +128,7 @@ python -m twine upload dist/*
 - **Backward Compatibility**: Schema changes maintain existing template support
 
 #### Integration Points
-- **ComfyUI Frontend**: Templates served at `/api/workflow_templates`
+- **Hanzo Frontend**: Templates served at `/api/workflow_templates`
 - **PyPI Distribution**: Automated packaging and versioning
 - **Validation Pipeline**: Pre-commit and CI/CD validation
 
@@ -144,7 +144,7 @@ python -m twine upload dist/*
 #### PR Requirements
 1. **Validation**: All templates must pass validation script
 2. **Version Bump**: Update version in `pyproject.toml`
-3. **Testing**: Verify template works end-to-end in ComfyUI
+3. **Testing**: Verify template works end-to-end in Hanzo Studio
 4. **Documentation**: Update README if adding new categories
 
 ## Architecture & Patterns
@@ -174,7 +174,7 @@ Template Name (e.g., "flux_dev_example")
 
 #### Embedded Metadata Approach
 - **Node-level Model Definitions**: Models defined in node properties
-- **Automatic Downloads**: ComfyUI fetches models on workflow execution
+- **Automatic Downloads**: Hanzo Studio fetches models on workflow execution
 - **Hash Verification**: SHA256 hashes ensure model integrity
 - **Directory Mapping**: Models organized by type (checkpoints, VAE, etc.)
 
@@ -193,7 +193,7 @@ Current categories with expansion patterns:
 - **Media Types**: Audio, 3D, specialized formats
 
 #### Internationalization Support
-- **Translation Integration**: Templates link to ComfyUI_frontend locales
+- **Translation Integration**: Templates link to Hanzo Studio_frontend locales
 - **Display Name Mapping**: Template names to human-readable titles
 - **Category Localization**: Category names support multiple languages
 
@@ -202,7 +202,7 @@ Current categories with expansion patterns:
 ### Adding New Templates
 
 #### Step-by-Step Process
-1. **Create Workflow**: Design and test in ComfyUI
+1. **Create Workflow**: Design and test in Hanzo Studio
 2. **Generate Thumbnails**: Compress and optimize assets
 3. **Embed Model Metadata**: Add download URLs and hashes
 4. **Add to Index**: Insert metadata entry in appropriate category
@@ -214,9 +214,9 @@ Current categories with expansion patterns:
 #### Template Testing Checklist
 ```bash
 # Delete existing models/assets to test fresh user experience
-rm -rf ComfyUI/models/*
+rm -rf Hanzo Studio/models/*
 
-# Load template in ComfyUI
+# Load template in Hanzo Studio
 # Verify automatic model downloads
 # Confirm workflow executes successfully
 # Check thumbnail generation matches expected output
@@ -246,21 +246,21 @@ version = "0.1.X"  # Increment for new templates/fixes
 # Target: <1MB per thumbnail, WebP format preferred
 ```
 
-## Integration with ComfyUI Ecosystem
+## Integration with Hanzo Studio Ecosystem
 
 ### Frontend Integration
-- **Template Browser**: ComfyUI_frontend serves templates via API
+- **Template Browser**: Hanzo Studio_frontend serves templates via API
 - **Automatic Loading**: Templates appear in Workflow → Browse Templates
 - **Model Downloads**: Frontend handles model fetching and installation
 
 ### Package Distribution
 - **PyPI Automation**: Version bumps trigger automatic publishing
-- **Installation**: `pip install comfyui-workflow-templates`
+- **Installation**: `pip install hanzo-studio-workflow-templates`
 - **Update Mechanism**: Users update via package manager
 
 ### Documentation Linkage
-- **Tutorial URLs**: Templates link to docs.comfy.org guides
-- **Example Workflows**: Integration with ComfyUI_examples repository
+- **Tutorial URLs**: Templates link to docs.hanzo.ai guides
+- **Example Workflows**: Integration with Hanzo Studio_examples repository
 - **Community Sharing**: Templates serve as learning resources
 
 ## Troubleshooting Common Issues
@@ -293,7 +293,7 @@ python scripts/validate_templates.py
 #### Model Download Failures
 - **Verify URLs**: Ensure HuggingFace URLs are accessible
 - **Check Hashes**: Validate SHA256 hashes match actual files
-- **Directory Mapping**: Confirm directory field matches ComfyUI structure
+- **Directory Mapping**: Confirm directory field matches Hanzo Studio structure
 
 #### Thumbnail Display Problems
 - **File Size**: Compress thumbnails under 1MB
@@ -313,7 +313,7 @@ python scripts/validate_templates.py
 
 #### Adding a New Template
 ```
-1. Is workflow tested in ComfyUI? → No: Test first
+1. Is workflow tested in Hanzo Studio? → No: Test first
 2. Are thumbnails optimized? → No: Compress and convert
 3. Are models embedded in node properties? → No: Add metadata
 4. Does template fit existing category? → No: Consider new category
@@ -332,9 +332,9 @@ python scripts/validate_templates.py
 ```
 
 ### Integration Context
-- **Part of ComfyUI Ecosystem**: Works with ComfyUI_frontend, ComfyUI core
+- **Part of Hanzo Studio Ecosystem**: Works with Hanzo Studio_frontend, Hanzo Studio core
 - **PyPI Package**: Distributed as Python package for easy installation
 - **Community Resource**: Templates serve as examples and learning materials
 - **API Integration**: Supports external service workflows (OpenAI, Stability AI, etc.)
 
-This repository is essential infrastructure for the ComfyUI ecosystem, providing standardized workflow distribution and serving as the canonical collection of AI generation templates for users and developers.
+This repository is essential infrastructure for the Hanzo Studio ecosystem, providing standardized workflow distribution and serving as the canonical collection of AI generation templates for users and developers.

@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This plan outlines a phased migration from LiteGraph canvas rendering to Vue-based DOM rendering for ComfyUI nodes. Vue-based nodes allows access to component libraries (PrimeVue) and CSS frameworks, which increases iteration speed significantly. The migration preserves LiteGraph as the source of truth for graph logic while leveraging Vue components for rich, accessible node interfaces. Increased development speed will facilitate next gen UI/UX changes: .
+This plan outlines a phased migration from LiteGraph canvas rendering to Vue-based DOM rendering for Hanzo Studio nodes. Vue-based nodes allows access to component libraries (PrimeVue) and CSS frameworks, which increases iteration speed significantly. The migration preserves LiteGraph as the source of truth for graph logic while leveraging Vue components for rich, accessible node interfaces. Increased development speed will facilitate next gen UI/UX changes: .
 
 ## Goals and Objectives
 
@@ -239,7 +239,7 @@ For desktop users who have consented to telemetry:
 
 ### Migration Guide
 
-Comprehensive migration documentation will be published at https://docs.comfy.org including:
+Comprehensive migration documentation will be published at https://docs.hanzo.ai including:
 
 - Step-by-step migration instructions for common patterns
 - Code examples for converting canvas widgets to Vue components

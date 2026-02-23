@@ -1,12 +1,12 @@
-# Technical Details: ComfyUI v3 Architecture
+# Technical Details: Hanzo Studio v3 Architecture
 
-Deep dive into the technical implementation details of the ComfyUI v3 system.
+Deep dive into the technical implementation details of the Hanzo Studio v3 system.
 
 ## Architecture Overview
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      ComfyUI Host Process                     │
+│                      Hanzo Studio Host Process                     │
 │  ┌─────────────────┐  ┌──────────────┐  ┌──────────────┐   │
 │  │ Execution Engine│  │ Node Registry│  │Model Manager │   │
 │  │   (async)       │  │  (v1 + v3)   │  │  (shared)    │   │

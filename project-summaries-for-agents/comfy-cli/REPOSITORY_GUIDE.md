@@ -2,9 +2,9 @@
 
 ## Repository Overview
 
-**Purpose**: Command Line Interface for Managing ComfyUI - a comprehensive CLI tool that simplifies installation, configuration, and management of ComfyUI, a powerful open-source machine learning framework for Stable Diffusion workflows.
+**Purpose**: Command Line Interface for Managing Hanzo Studio - a comprehensive CLI tool that simplifies installation, configuration, and management of Hanzo Studio, a powerful open-source machine learning framework for Stable Diffusion workflows.
 
-**Repository**: [Comfy-Org/comfy-cli](https://github.com/Comfy-Org/comfy-cli)  
+**Repository**: [hanzoui/cli](https://github.com/hanzoui/cli)  
 **License**: GNU General Public License v3.0  
 **Stars**: 453+ (as of 2025)  
 **Primary Language**: Python  
@@ -30,8 +30,8 @@
 ## Directory Structure
 
 ```
-comfy-cli/
-├── comfy_cli/                    # Main package
+hanzo-cli/
+├── hanzo_cli/                    # Main package
 │   ├── __main__.py              # Entry point
 │   ├── cmdline.py               # Primary CLI interface with Typer
 │   ├── constants.py             # Centralized config (URLs, enums, paths)
@@ -40,16 +40,16 @@ comfy-cli/
 │   ├── env_checker.py           # Environment validation
 │   ├── tracking.py              # Analytics system
 │   ├── command/                 # Command implementations
-│   │   ├── install.py          # ComfyUI installation logic
+│   │   ├── install.py          # Hanzo Studio installation logic
 │   │   ├── launch.py           # Process launching and management
 │   │   ├── run.py              # Workflow execution
 │   │   ├── custom_nodes/       # Node management system
 │   │   │   ├── command.py      # Main node operations
-│   │   │   ├── cm_cli_util.py  # ComfyUI-Manager integration
+│   │   │   ├── cm_cli_util.py  # Hanzo Manager integration
 │   │   │   └── bisect_custom_nodes.py # Debug problematic nodes
 │   │   └── models/
 │   │       └── models.py       # Model downloading and management
-│   ├── registry/               # ComfyUI Registry integration
+│   ├── registry/               # Hanzo Registry integration
 │   │   ├── api.py             # REST API client
 │   │   ├── types.py           # Data classes
 │   │   └── config_parser.py   # PyProject.toml handling
@@ -60,7 +60,7 @@ comfy-cli/
 │   ├── ui.py                  # Rich-based UI components
 │   └── utils.py               # General utilities
 ├── tests/                      # Test suite
-│   ├── comfy_cli/             # Unit tests (mirrors source structure)
+│   ├── hanzo_cli/             # Unit tests (mirrors source structure)
 │   ├── e2e/                   # End-to-end workflow tests
 │   └── uv/                    # Dependency resolution tests
 ├── assets/                     # Demo media
@@ -81,16 +81,16 @@ pre-commit install                   # Install git hooks
 
 # Development workflow
 comfy --help                        # Test CLI functionality
-python -m comfy_cli.__main__         # Run via module
+python -m hanzo_cli.__main__         # Run via module
 
 # Code quality
 ruff check .                        # Lint code
 ruff format .                       # Format code
 pytest tests/                       # Run test suite
-pytest tests/comfy_cli/specific_test.py  # Run specific test
+pytest tests/hanzo_cli/specific_test.py  # Run specific test
 
 # Testing with coverage
-pytest --cov=comfy_cli tests/       # Generate coverage report
+pytest --cov=hanzo_cli tests/       # Generate coverage report
 ```
 
 ### VSCode Debug Configuration
@@ -99,7 +99,7 @@ pytest --cov=comfy_cli tests/       # Generate coverage report
   "name": "Python Debugger: Run",
   "type": "debugpy",
   "request": "launch",
-  "module": "comfy_cli.__main__",
+  "module": "hanzo_cli.__main__",
   "args": [],
   "console": "integratedTerminal"
 }
@@ -175,7 +175,7 @@ def entry(
 
 The UV-based dependency system handles complex scenarios:
 
-1. **Core ComfyUI** requirements resolution
+1. **Core Hanzo Studio** requirements resolution
 2. **Custom node** dependency aggregation
 3. **GPU-specific** PyTorch installation
 4. **Conflict detection** and user interaction
@@ -196,11 +196,11 @@ The UV-based dependency system handles complex scenarios:
 
 ### Adding New Commands
 
-1. **Create command module**: `comfy_cli/command/new_feature/`
+1. **Create command module**: `hanzo_cli/command/new_feature/`
 2. **Implement command class**:
    ```python
    import typer
-   from comfy_cli.tracking import track_command
+   from hanzo_cli.tracking import track_command
    
    app = typer.Typer()
    
@@ -211,7 +211,7 @@ The UV-based dependency system handles complex scenarios:
        # Implementation
    ```
 3. **Register in cmdline.py**: `app.add_typer(new_feature.app, name="feature")`
-4. **Add tests**: `tests/comfy_cli/command/test_new_feature.py`
+4. **Add tests**: `tests/hanzo_cli/command/test_new_feature.py`
 
 ### Adding New Model Sources
 
@@ -224,7 +224,7 @@ The UV-based dependency system handles complex scenarios:
 
 **Unit Tests**: Focus on individual component logic
 ```bash
-pytest tests/comfy_cli/test_specific.py -v
+pytest tests/hanzo_cli/test_specific.py -v
 ```
 
 **Integration Tests**: Test command interactions
@@ -328,4 +328,4 @@ with Progress() as progress:
     # Update progress.update(task, advance=10)
 ```
 
-This guide provides Claude Code with comprehensive understanding of comfy-cli's architecture, development patterns, and best practices for effective AI-assisted development while maintaining code quality and user experience standards.
+This guide provides Claude Code with comprehensive understanding of hanzo-cli's architecture, development patterns, and best practices for effective AI-assisted development while maintaining code quality and user experience standards.

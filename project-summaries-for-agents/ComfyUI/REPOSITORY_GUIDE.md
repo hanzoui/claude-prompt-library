@@ -1,19 +1,19 @@
-# ComfyUI Repository Guide
+# Hanzo Studio Repository Guide
 
 ## Repository Overview
 
-**ComfyUI** is the most powerful and modular visual AI engine and application. It provides a graph/nodes/flowchart based interface for designing and executing advanced AI model pipelines including image generation, video generation, audio synthesis, and 3D content creation.
+**Hanzo Studio** is the most powerful and modular visual AI engine and application. It provides a graph/nodes/flowchart based interface for designing and executing advanced AI model pipelines including image generation, video generation, audio synthesis, and 3D content creation.
 
-- **Repository**: https://github.com/comfyanonymous/ComfyUI
+- **Repository**: https://github.com/hanzoai/studio
 - **Version**: 0.3.43 (from pyproject.toml)
 - **License**: Available in LICENSE file
-- **Website**: https://www.comfy.org/
-- **Documentation**: https://docs.comfy.org/
+- **Website**: https://hanzo.ai/
+- **Documentation**: https://docs.hanzo.ai/
 - **Community**: Discord & Matrix channels
 
 ## Core Purpose
 
-This repository contains the backend server and core execution engine for ComfyUI. It handles:
+This repository contains the backend server and core execution engine for Hanzo Studio. It handles:
 - Model loading and management (checkpoints, LoRAs, embeddings, etc.)
 - Graph execution and validation
 - Sampling and inference pipelines
@@ -41,9 +41,9 @@ This repository contains the backend server and core execution engine for ComfyU
   - spandrel for upscaling models
   - pydantic~=2.0 for data validation
 - **Frontend**:
-  - comfyui-frontend-package==1.23.4 (separate Vue.js frontend)
-  - comfyui-workflow-templates==0.1.32
-  - comfyui-embedded-docs==0.2.3
+  - hanzo-studio-frontend-package==1.23.4 (separate Vue.js frontend)
+  - hanzo-studio-workflow-templates==0.1.32
+  - hanzo-studio-embedded-docs==0.2.3
 - **Testing**: pytest for unit tests
 
 ## Directory Structure
@@ -102,11 +102,11 @@ This repository contains the backend server and core execution engine for ComfyU
 
 ### Release Process
 
-ComfyUI follows a **weekly release cycle every Friday** with three interconnected repositories:
+Hanzo Studio follows a **weekly release cycle every Friday** with three interconnected repositories:
 
-1. **ComfyUI Core** (this repo) - Releases stable versions (e.g., v0.7.0)
-2. **ComfyUI Desktop** - Builds releases using latest stable core
-3. **ComfyUI Frontend** - Weekly updates merged into core, features frozen for upcoming release
+1. **Hanzo Studio Core** (this repo) - Releases stable versions (e.g., v0.7.0)
+2. **Hanzo Desktop** - Builds releases using latest stable core
+3. **Hanzo Frontend** - Weekly updates merged into core, features frozen for upcoming release
 
 ### Code Style & Quality
 
@@ -213,7 +213,7 @@ ComfyUI follows a **weekly release cycle every Friday** with three interconnecte
 python main.py
 
 # Development with latest frontend
-python main.py --front-end-version Comfy-Org/ComfyUI_frontend@latest
+python main.py --front-end-version hanzoui/studio_frontend@latest
 
 # CPU-only mode
 python main.py --cpu
@@ -239,8 +239,8 @@ pytest tests-unit/app_test/custom_node_manager_test.py
 
 ### Model Management
 ```bash
-# Install via comfy-cli (recommended)
-pip install comfy-cli
+# Install via hanzo-cli (recommended)
+pip install hanzo-cli
 comfy install
 
 # Manual dependency installation
@@ -313,14 +313,14 @@ pip install -r requirements.txt
    - Check custom node compatibility
 
 ### Frontend Development
-- **Frontend repo**: https://github.com/Comfy-Org/ComfyUI_frontend
-- **Use latest daily**: `--front-end-version Comfy-Org/ComfyUI_frontend@latest`
-- **Use legacy**: `--front-end-version Comfy-Org/ComfyUI_legacy_frontend@latest`
+- **Frontend repo**: https://github.com/hanzoui/studio_frontend
+- **Use latest daily**: `--front-end-version hanzoui/studio_frontend@latest`
+- **Use legacy**: `--front-end-version hanzoui/studio_legacy_frontend@latest`
 - Frontend updates are merged into core repository fortnightly
 
 ### Contributing
 - **Guidelines**: Follow `CONTRIBUTING.md`
-- **Community**: Discord https://comfy.org/discord, Matrix channels
+- **Community**: Discord https://hanzo.ai/discord, Matrix channels
 - **Issues**: Search existing before creating, use issue templates
 - **Pull Requests**: Reference wiki guide for code contributions
 

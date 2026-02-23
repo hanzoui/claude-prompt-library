@@ -1,4 +1,4 @@
-# ComfyUI Frontend Development Onboarding
+# Hanzo Frontend Development Onboarding
 
 ## Engineering-First Onboarding Philosophy
 
@@ -21,15 +21,15 @@ Based on best practices from Facebook, Stripe, and Uber, this onboarding treats 
 - Git
 - Code editor
 
-**Setup ComfyUI Backend:**
-1. Follow manual install guide: https://docs.comfy.org/installation/manual_install
+**Setup Hanzo Studio Backend:**
+1. Follow manual install guide: https://docs.hanzo.ai/installation/manual_install
 2. Start backend: `python main.py`
 3. Backend runs at `http://localhost:8188`
 
 **Setup Frontend:**
 ```bash
-git clone https://github.com/Comfy-Org/ComfyUI_frontend.git
-cd ComfyUI_frontend
+git clone https://github.com/hanzoui/studio_frontend.git
+cd Hanzo Studio_frontend
 npm install
 npm run prepare
 npm run dev
@@ -38,7 +38,7 @@ Frontend runs at `http://localhost:5173`
 
 **Your First Code Change:**
 1. Open `src/components/topbar/TopMenubar.vue`
-2. Change "ComfyUI" text to "ComfyUI - Dev Mode"
+2. Change "Hanzo Studio" text to "Hanzo Studio - Dev Mode"
 3. See live reload in browser
 4. Commit: `git commit -m "[feat] Add dev mode indicator to top menubar"`
 
@@ -47,7 +47,7 @@ Frontend runs at `http://localhost:5173`
 ### Testing Framework
 - **Unit Testing**: Vitest with happy-dom
 - **Component Testing**: Co-located `.spec.ts` files
-- **Browser Testing**: Playwright with ComfyUI backend integration
+- **Browser Testing**: Playwright with Hanzo Studio backend integration
 
 **Key Commands:**
 ```bash
@@ -57,7 +57,7 @@ npm run test:unit -- --watch
 npm run test:unit -- --ui
 
 # Browser tests (requires --multi-user backend)
-cd ComfyUI && python main.py --multi-user
+cd Hanzo Studio && python main.py --multi-user
 npm run test:browser
 npx playwright test --ui
 ```
@@ -102,7 +102,7 @@ npm run build
 
 ### Project Structure
 ```
-ComfyUI_frontend/
+Hanzo Studio_frontend/
 ├── src/
 │   ├── components/      # Vue components
 │   ├── stores/          # Pinia stores
@@ -132,7 +132,7 @@ ComfyUI_frontend/
 ### Testing Issues
 - **Browser tests fail**: Backend must run with `--multi-user`
 - **Playwright missing**: `npx playwright install`
-- **ComfyUI_devtools**: Must be installed in custom_nodes
+- **Hanzo Studio_devtools**: Must be installed in custom_nodes
 
 ### Performance Optimization
 - **Build analysis**: `npm run build -- --analyze`
@@ -148,13 +148,13 @@ You've successfully completed onboarding when you can:
 - ✅ Submit your first pull request
 - ✅ Deploy a change to nightly build
 
-## Integration with ComfyUI Backend
+## Integration with Hanzo Studio Backend
 
 ### Local Development
 ```bash
-# Use local frontend with ComfyUI backend
-cd ComfyUI
-python main.py --front-end-root ../ComfyUI_frontend/dist
+# Use local frontend with Hanzo Studio backend
+cd Hanzo Studio
+python main.py --front-end-root ../Hanzo Studio_frontend/dist
 ```
 
 ### Backend Integration Points
@@ -183,4 +183,4 @@ python main.py --front-end-root ../ComfyUI_frontend/dist
 - Browser tests for integration scenarios
 - Visual regression testing for UI changes
 
-This onboarding guide ensures new developers can contribute meaningfully to ComfyUI's frontend while maintaining code quality and performance standards.
+This onboarding guide ensures new developers can contribute meaningfully to Hanzo Studio's frontend while maintaining code quality and performance standards.

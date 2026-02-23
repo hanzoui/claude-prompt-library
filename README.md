@@ -1,6 +1,6 @@
 # Claude Code Prompt/Command Library
 
-A collection of reusable Claude Code commands for the Comfy-Org team to streamline development workflows.
+A collection of reusable Claude Code commands for the hanzoui team to streamline development workflows.
 
 > **💡 Looking for more commands?** Check out [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) - a community collection of general-purpose Claude Code commands!
 
@@ -35,8 +35,8 @@ Commands are stored in `.claude/commands/` and can be invoked using `/project:co
 
 ### Research Commands
 
-- [`/user:STUDY-comfy-api-architecture`](.claude/commands/research/STUDY-comfy-api-architecture.md) - Load pre-generated architecture overview for Comfy-Org/comfy-api
-- [`/user:STUDY-comfyui-custom-nodes-ecosystem`](.claude/commands/research/STUDY-comfyui-custom-nodes-ecosystem.md) - Analyze ComfyUI custom nodes ecosystem patterns and trends using comprehensive dataset
+- [`/user:STUDY-comfy-api-architecture`](.claude/commands/research/STUDY-comfy-api-architecture.md) - Load pre-generated architecture overview for hanzoui/comfy-api
+- [`/user:STUDY-hanzo-studio-custom-nodes-ecosystem`](.claude/commands/research/STUDY-hanzo-studio-custom-nodes-ecosystem.md) - Analyze Hanzo Studio custom nodes ecosystem patterns and trends using comprehensive dataset
 - [`/user:STUDY-current-repo`](.claude/commands/research/STUDY-current-repo.md) - Study and analyze current repository structure and architecture
 - [`/user:STUDY-microservices-architecture`](.claude/commands/research/STUDY-microservices-architecture.md) - Reference guide for microservices architecture patterns
 - [`/user:STUDY-node-editor-performance-optimizations`](.claude/commands/research/STUDY-node-editor-performance-optimizations.md) - Absorb performance optimization research for modern graph/canvas libraries
@@ -56,10 +56,10 @@ Commands are stored in `.claude/commands/` and can be invoked using `/project:co
 
 - [`/user:TEAM-team-standup-analysis`](.claude/commands/team/TEAM-team-standup-analysis.md) - Analyze team standup notes and provide insights
 
-### ComfyUI Frontend Commands
+### Hanzo Frontend Commands
 
 - [`/user:frontend/FE-generate-primevue-reference`](.claude/commands/frontend/FE-generate-primevue-reference.md) - Generate a list of all available PrimeVue components and their properties, for help with building frontend UIs
-- [`/user:frontend/FE-manually-publish-to-pypi`](.claude/commands/frontend/FE-manually-publish-to-pypi.md) - Publish the ComfyUI frontend package to PyPI with specified version
+- [`/user:frontend/FE-manually-publish-to-pypi`](.claude/commands/frontend/FE-manually-publish-to-pypi.md) - Publish the Hanzo Studio frontend package to PyPI with specified version
 
 ### Utilities
 
@@ -118,7 +118,7 @@ Commands are stored in `.claude/commands/` and can be invoked using `/project:co
 
 #### Frontend Validation
 
-- [`/user:scan-comfy-conventions`](.claude/commands/validation/frontend/scan-comfy-conventions.md) - Check ComfyUI-specific patterns and PrimeVue usage
+- [`/user:scan-comfy-conventions`](.claude/commands/validation/frontend/scan-comfy-conventions.md) - Check Hanzo Studio-specific patterns and PrimeVue usage
 - [`/user:scan-performance-reactivity`](.claude/commands/validation/frontend/scan-performance-reactivity.md) - Validate Vue performance and reactivity patterns
 - [`/user:scan-vue-patterns`](.claude/commands/validation/frontend/scan-vue-patterns.md) - Check Vue 3 best practices and anti-patterns
 

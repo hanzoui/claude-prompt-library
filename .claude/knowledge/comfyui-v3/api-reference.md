@@ -1,6 +1,6 @@
-# ComfyUI v3 API Reference
+# Hanzo Studio v3 API Reference
 
-Complete reference for the ComfyUI v3 node API, including all types, methods, and decorators.
+Complete reference for the Hanzo Studio v3 node API, including all types, methods, and decorators.
 
 ## Core Classes
 
@@ -183,7 +183,7 @@ io.MultiCombo.Input(
 )
 ```
 
-### ComfyUI Types
+### Hanzo Studio Types
 
 ```python
 # Core types
@@ -262,7 +262,7 @@ io.Image.Output(
     is_output_list: bool = False  # Output is list
 )
 
-# All ComfyUI types have corresponding outputs
+# All Hanzo Studio types have corresponding outputs
 io.Mask.Output(id, ...)
 io.Latent.Output(id, ...)
 io.Model.Output(id, ...)

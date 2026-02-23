@@ -1,14 +1,14 @@
-# ComfyUI Documentation Repository Guide
+# Hanzo Studio Documentation Repository Guide
 
 ## Repository Overview
 
-**Repository**: [Comfy-Org/docs](https://github.com/Comfy-Org/docs)  
-**Purpose**: Official documentation site for ComfyUI ecosystem  
-**Live Site**: https://docs.comfy.org/  
+**Repository**: [hanzoui/docs](https://github.com/hanzoui/docs)  
+**Purpose**: Official documentation site for Hanzo Studio ecosystem  
+**Live Site**: https://docs.hanzo.ai/  
 **Technology**: Mintlify documentation platform with bilingual support  
 **License**: Various (see LICENSE file)  
 
-This repository contains the complete documentation for ComfyUI, including user guides, developer documentation, tutorials, and API references. The documentation supports both English and Chinese languages with full content parity.
+This repository contains the complete documentation for Hanzo Studio, including user guides, developer documentation, tutorials, and API references. The documentation supports both English and Chinese languages with full content parity.
 
 ## Technology Stack
 
@@ -16,7 +16,7 @@ This repository contains the complete documentation for ComfyUI, including user 
 - **Mintlify 4.1.21** - Modern documentation platform
 - **MDX** - Markdown with React components for rich content
 - **Sharp 0.33.3** - Image processing for optimized assets
-- **Maple Theme** - Custom ComfyUI branding with dark/light modes
+- **Maple Theme** - Custom Hanzo Studio branding with dark/light modes
 - **FontAwesome** - Icon library for navigation and UI elements
 
 ### Analytics & Tracking
@@ -44,8 +44,8 @@ This repository contains the complete documentation for ComfyUI, including user 
 ├── built-in-nodes/          # Documentation for core nodes
 ├── development/             # Developer guides and architecture
 ├── custom-nodes/            # Custom node development
-├── comfy-cli/              # CLI tool documentation
-├── registry/               # ComfyUI Registry documentation
+├── hanzo-cli/              # CLI tool documentation
+├── registry/               # Hanzo Registry documentation
 ├── specs/                  # Technical specifications
 ├── troubleshooting/        # Common issues and solutions
 ├── community/              # Contributing guidelines
@@ -61,7 +61,7 @@ This repository contains the complete documentation for ComfyUI, including user 
 #### Configuration Files
 - `docs.json` - Navigation structure, themes, redirects, localization settings
 - `package.json` - Dependencies and development scripts
-- `openapi.yml` - API documentation for ComfyUI Registry
+- `openapi.yml` - API documentation for Hanzo Registry
 
 #### Content Types
 - `.mdx` files - Main documentation content with React components
@@ -88,7 +88,7 @@ npm run dev
 3. **Include Chinese translations** in parallel `zh-CN/` structure
 4. **Add redirects** if moving or renaming existing files
 5. **Test locally** with `npm run dev`
-6. **Create PR** - Vercel automatically deploys to https://docs.comfy.org/
+6. **Create PR** - Vercel automatically deploys to https://docs.hanzo.ai/
 
 ### Development Guidelines
 
@@ -194,7 +194,7 @@ API Integrations (Developer Focused)
 5. **Submit PR** (GitHub Actions validate redirects)
 
 ### Managing Workflow Examples
-1. **Create workflow in ComfyUI** with embedded model URLs
+1. **Create workflow in Hanzo Studio** with embedded model URLs
 2. **Use workflow editor tool** to embed metadata
 3. **Upload to example_workflows repository**
 4. **Reference via raw GitHub URLs** in documentation
@@ -299,7 +299,7 @@ New Content → Is it user-facing or developer docs?
 │   ├── Intermediate → /tutorials/[specific-topic]/
 │   └── Advanced → /tutorials/advanced/ or /tutorials/[specific-api]/
 └── Developer → What type?
-    ├── API Integration → /development/comfyui-server/
+    ├── API Integration → /development/hanzo-studio-server/
     ├── Custom Nodes → /custom-nodes/
     └── Registry → /registry/
 ```

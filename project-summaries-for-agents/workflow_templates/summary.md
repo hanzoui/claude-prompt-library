@@ -1,12 +1,12 @@
-# ComfyUI Workflow Templates Repository Guide
+# Hanzo Studio Workflow Templates Repository Guide
 
 ## Repository Overview
 
-- **Purpose**: Official collection of workflow templates for ComfyUI, providing pre-built workflows that demonstrate various AI generation capabilities (image, video, audio, 3D)
-- **Repository**: https://github.com/Comfy-Org/workflow_templates
-- **Package**: Published to PyPI as `comfyui_workflow_templates` (v0.1.33)
+- **Purpose**: Official collection of workflow templates for Hanzo Studio, providing pre-built workflows that demonstrate various AI generation capabilities (image, video, audio, 3D)
+- **Repository**: https://github.com/hanzoui/workflow-templates
+- **Package**: Published to PyPI as `hanzo_studio_workflow_templates` (v0.1.33)
 - **License**: MIT License
-- **Integration**: Templates are bundled and served through the ComfyUI frontend application
+- **Integration**: Templates are bundled and served through the Hanzo Studio frontend application
 - **Template Count**: 130+ workflow templates across multiple categories
 
 ## Technology Stack
@@ -35,7 +35,7 @@ workflow_templates/
 │   ├── publish.yml           # Auto-publish to PyPI on version bump
 │   ├── validate-templates.yml # PR validation checks
 │   └── sync-gcs.yml          # Google Cloud Storage sync
-├── comfyui_workflow_templates/  # Python package structure
+├── hanzo_studio_workflow_templates/  # Python package structure
 ├── pyproject.toml             # Package configuration
 ├── setup.py                   # Package setup
 └── README.md                  # Detailed contributor guide
@@ -51,7 +51,7 @@ python scripts/validate_templates.py
 # Install for development
 pip install -e .
 
-# Test integration with ComfyUI frontend
+# Test integration with Hanzo Studio frontend
 # In frontend repo: Add DISABLE_TEMPLATES_PROXY=true to .env
 # Copy templates/ folder to frontend/public/
 ```
@@ -111,7 +111,7 @@ pip install -e .
    - Recent pattern: frequent small version bumps (0.1.x)
 
 5. **Workflow Creation Best Practices**:
-   - Start ComfyUI with `--disable-all-custom-nodes` to prevent metadata pollution
+   - Start Hanzo Studio with `--disable-all-custom-nodes` to prevent metadata pollution
    - First execution output should match the thumbnail
    - Include node version requirements when needed (cnr_id, ver in properties)
    - Add documentation nodes (MarkdownNote) for complex workflows
@@ -122,7 +122,7 @@ pip install -e .
 - **Index-Based**: All templates registered in `index.json` with categories
 - **Category Structure**: moduleName, title, type (optional), templates array
 - **Template Metadata**: name, title (optional), description, mediaType, mediaSubtype, thumbnailVariant, tutorialUrl
-- **Distribution Model**: PyPI package consumed by ComfyUI frontend
+- **Distribution Model**: PyPI package consumed by Hanzo Studio frontend
 - **Thumbnail Variants**: compareSlider, hoverDissolve, hoverZoom, zoomHover (legacy)
 
 ### Validation Pipeline (Enhanced)
@@ -149,7 +149,7 @@ pip install -e .
 
 1. **Create Workflow**:
    ```bash
-   # Start ComfyUI without custom nodes
+   # Start Hanzo Studio without custom nodes
    python main.py --disable-all-custom-nodes
    # Create and export workflow
    ```
@@ -189,7 +189,7 @@ pip install -e .
 
 6. **Post-Merge**:
    - Version bump triggers automatic PyPI release
-   - Add translations in ComfyUI_frontend repo
+   - Add translations in Hanzo Studio_frontend repo
 
 ### Testing Templates
 ```bash
@@ -197,7 +197,7 @@ pip install -e .
 python scripts/validate_templates.py
 
 # Test in frontend
-cd ../ComfyUI_frontend
+cd ../Hanzo Studio_frontend
 echo "DISABLE_TEMPLATES_PROXY=true" >> .env
 cp -r ../workflow_templates/templates public/
 npm run dev
@@ -249,7 +249,7 @@ npm run dev
 
 ## Integration Points
 
-### ComfyUI Frontend Integration
+### Hanzo Frontend Integration
 - Templates packaged and distributed via PyPI
 - Frontend fetches from package, not GitHub directly
 - Template browser UI with category filtering
@@ -261,6 +261,6 @@ npm run dev
 1. **PyPI**: Primary distribution as Python package
 2. **GitHub Releases**: Created automatically on version bump
 3. **Google Cloud Storage**: Synced for additional distribution
-4. **Frontend Bundle**: Included in ComfyUI frontend builds
+4. **Frontend Bundle**: Included in Hanzo Studio frontend builds
 
-This repository serves as the centralized, quality-controlled source for all official ComfyUI workflow examples, with robust validation, automated distribution, and active community contribution.
+This repository serves as the centralized, quality-controlled source for all official Hanzo Studio workflow examples, with robust validation, automated distribution, and active community contribution.

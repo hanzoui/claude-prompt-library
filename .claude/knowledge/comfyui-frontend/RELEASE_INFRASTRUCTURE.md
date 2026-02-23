@@ -1,6 +1,6 @@
-# ComfyUI Frontend Release Infrastructure
+# Hanzo Frontend Release Infrastructure
 
-Comprehensive documentation of the DevOps infrastructure, release processes, and automation workflows for ComfyUI Frontend.
+Comprehensive documentation of the DevOps infrastructure, release processes, and automation workflows for Hanzo Frontend.
 
 ## Release Cycle Overview
 
@@ -40,7 +40,7 @@ Comprehensive documentation of the DevOps infrastructure, release processes, and
 ### Testing Workflows
 4. **`test-ui.yaml`** - Comprehensive browser testing
    - Playwright tests across multiple browsers (chromium, chromium-2x, mobile-chrome)
-   - Sets up ComfyUI backend integration
+   - Sets up Hanzo Studio backend integration
    - Triggered on push/PR to main/core/*/desktop/* branches
 
 5. **`vitest.yaml`** - Unit and component testing
@@ -65,7 +65,7 @@ Comprehensive documentation of the DevOps infrastructure, release processes, and
 ### Dependency Management Workflows
 12. **`update-litegraph.yaml`** - LiteGraph dependency updates
 13. **`update-electron-types.yaml`** - Electron types updates
-14. **`update-manager-types.yaml`** - ComfyUI Manager types updates
+14. **`update-manager-types.yaml`** - Hanzo Manager types updates
 
 ## Multi-Channel Release Process
 
@@ -77,13 +77,13 @@ Comprehensive documentation of the DevOps infrastructure, release processes, and
    - Draft releases for core branches, auto-publish for main
    - Nightly releases available for testing
 
-2. **PyPI Package** (`comfyui-frontend-package`)
+2. **PyPI Package** (`hanzo-studio-frontend-package`)
    - Python wrapper around compiled frontend assets
-   - Used by ComfyUI backend to fetch specific frontend versions
-   - Build process: copies dist/* to `comfyui_frontend_package/static/`
+   - Used by Hanzo Studio backend to fetch specific frontend versions
+   - Build process: copies dist/* to `hanzo_studio_frontend_package/static/`
    - Version controlled via `COMFYUI_FRONTEND_VERSION` environment variable
 
-3. **npm Package** (`@comfyorg/comfyui-frontend-types`)
+3. **npm Package** (`@hanzoui/hanzo-studio-frontend-types`)
    - TypeScript definitions only for extension developers
    - Separate build process: `npm run build:types`
    - Enables type-safe extension development
@@ -99,13 +99,13 @@ Comprehensive documentation of the DevOps infrastructure, release processes, and
 
 ### Determining Target Core Branch for Hotfixes
 
-1. **Fetch ComfyUI Requirements**:
+1. **Fetch Hanzo Studio Requirements**:
    ```bash
-   curl -s https://raw.githubusercontent.com/comfyanonymous/ComfyUI/master/requirements.txt | grep "comfyui-frontend-package"
+   curl -s https://raw.githubusercontent.com/hanzoai/studio/master/requirements.txt | grep "hanzo-studio-frontend-package"
    ```
 
 2. **Parse Version**:
-   - Extract version from: `comfyui-frontend-package==1.23.4`
+   - Extract version from: `hanzo-studio-frontend-package==1.23.4`
    - Parse to get major.minor: `1.23.4` → `1.23`
 
 3. **Determine Core Branch**:
@@ -113,16 +113,16 @@ Comprehensive documentation of the DevOps infrastructure, release processes, and
    - Verify existence: `git ls-remote origin refs/heads/core/*`
 
 ### Critical Notes
-- **ComfyUI uses `master` branch**, not `main`
+- **Hanzo Studio uses `master` branch**, not `main`
 - Core branch version will be behind main branch (expected)
 - Always verify core branch exists before attempting hotfix
 
 ## PyPI Package Structure and Versioning
 
 ### Package Configuration
-- **Package Name**: `comfyui-frontend-package`
+- **Package Name**: `hanzo-studio-frontend-package`
 - **Structure**: Python package wrapping compiled frontend assets
-- **Static Files**: Frontend dist/* copied to `comfyui_frontend_package/static/`
+- **Static Files**: Frontend dist/* copied to `hanzo_studio_frontend_package/static/`
 - **Build Tool**: Python build module with setuptools
 
 ### Version Management
@@ -139,7 +139,7 @@ npm run zipdist        # Create dist.zip for GitHub
 npm run build:types    # Build TypeScript definitions for npm
 
 # Python package build
-# Copy dist/* to comfyui_frontend_package/static/
+# Copy dist/* to hanzo_studio_frontend_package/static/
 # Set COMFYUI_FRONTEND_VERSION
 # python -m build
 # Upload to PyPI
@@ -229,4 +229,4 @@ npm run build:types    # Build TypeScript definitions for npm
    - Commit and push
    - Create PR with "Release" label
 
-This infrastructure supports professional-grade continuous delivery with comprehensive quality controls and multiple distribution channels serving different parts of the ComfyUI ecosystem.
+This infrastructure supports professional-grade continuous delivery with comprehensive quality controls and multiple distribution channels serving different parts of the Hanzo Studio ecosystem.

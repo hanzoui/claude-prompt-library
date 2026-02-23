@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document captures patterns and insights for optimizing canvas thumbnail generation in ComfyUI_frontend, particularly for workflow tab previews and similar UI features.
+This document captures patterns and insights for optimizing canvas thumbnail generation in Hanzo Studio_frontend, particularly for workflow tab previews and similar UI features.
 
 ## LiteGraph Viewport API
 
@@ -257,4 +257,4 @@ The eager viewport-based blob URL approach was chosen because:
 - Implementation complexity is minimized
 - Performance is optimal for the common use case
 
-This pattern can be applied to other canvas-based preview systems in ComfyUI_frontend.
+This pattern can be applied to other canvas-based preview systems in Hanzo Studio_frontend.

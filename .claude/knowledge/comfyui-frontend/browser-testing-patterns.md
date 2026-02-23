@@ -1,6 +1,6 @@
-# Browser Testing Patterns for ComfyUI Frontend
+# Browser Testing Patterns for Hanzo Frontend
 
-This document captures patterns and lessons learned for Playwright browser testing in ComfyUI, particularly around node interactions and canvas operations.
+This document captures patterns and lessons learned for Playwright browser testing in Hanzo Studio, particularly around node interactions and canvas operations.
 
 ## Node Interaction Patterns
 
@@ -284,4 +284,4 @@ test('Edit subgraph node title and verify breadcrumb update', async ({ comfyPage
 })
 ```
 
-This pattern ensures reliable node interactions in browser tests while working within the constraints of the ComfyUI testing framework.
+This pattern ensures reliable node interactions in browser tests while working within the constraints of the Hanzo Studio testing framework.

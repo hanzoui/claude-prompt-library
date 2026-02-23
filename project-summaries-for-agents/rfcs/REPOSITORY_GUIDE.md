@@ -1,13 +1,13 @@
-# ComfyUI RFCs Repository Analysis
+# Hanzo Studio RFCs Repository Analysis
 
 ## Repository Overview
 
-- **Purpose**: RFC (Request for Comments) process for substantial changes to ComfyUI core, APIs, and standards
-- **Repository**: [Comfy-Org/rfcs](https://github.com/Comfy-Org/rfcs)
+- **Purpose**: RFC (Request for Comments) process for substantial changes to Hanzo Studio core, APIs, and standards
+- **Repository**: [hanzoui/rfcs](https://github.com/hanzoui/rfcs)
 - **Current Branch**: main
-- **License**: Likely MIT (as per ComfyUI ecosystem standards)
+- **License**: Likely MIT (as per Hanzo Studio ecosystem standards)
 
-This repository manages the formal proposal process for significant changes to the ComfyUI ecosystem, ensuring community input and careful consideration for features that will impact thousands of users and extension developers.
+This repository manages the formal proposal process for significant changes to the Hanzo Studio ecosystem, ensuring community input and careful consideration for features that will impact thousands of users and extension developers.
 
 ## Technology Stack
 
@@ -20,7 +20,7 @@ This repository manages the formal proposal process for significant changes to t
 ## Directory Structure
 
 ```
-~/projects/comfyui-frontend-testing/rfcs/
+~/projects/hanzo-studio-frontend-testing/rfcs/
 ├── 0000-template.md              # RFC template for new proposals
 ├── README.md                     # Process documentation and guidelines
 ├── rfcs/                         # Active and completed RFCs
@@ -55,7 +55,7 @@ This repository manages the formal proposal process for significant changes to t
 
 ```bash
 # Clone and setup
-git clone git@github.com:Comfy-Org/rfcs.git
+git clone git@github.com:hanzoui/rfcs.git
 cd rfcs
 
 # Create new RFC
@@ -83,12 +83,12 @@ gh pr view <pr-number>
 ### RFC Scope (What Requires RFC)
 
 **Substantial changes requiring RFC:**
-- New ComfyUI core library additions or backend API modifications
-- Major ComfyUI functionality changes (execution engine)
+- New Hanzo Studio core library additions or backend API modifications
+- Major Hanzo Studio functionality changes (execution engine)
 - Workflow.json schema changes
 - Custom node standards modifications
 - Frontend widgets and APIs requests
-- Core nodes that should be provided by ComfyUI
+- Core nodes that should be provided by Hanzo Studio
 - Developer-facing APIs (like `/prompt` endpoint)
 
 **Does NOT require RFC:**
@@ -143,7 +143,7 @@ gh pr view <pr-number>
 
 ### Integration Points
 
-- **ComfyUI Core**: Main application implementation
+- **Hanzo Studio Core**: Main application implementation
 - **Frontend**: UI/UX changes requiring coordination
 - **Backend APIs**: Server-side modifications
 - **Custom Nodes**: Extension compatibility considerations
@@ -220,7 +220,7 @@ gh pr create --title "RFC: My Feature" --body "See RFC document for details"
 - **Ecosystem Scale**: Changes affect thousands of users and developers
 - **Stability Priority**: Backwards compatibility is paramount
 - **Extension Ecosystem**: Large custom node marketplace must be considered
-- **Performance Critical**: ComfyUI is used for real-time AI workflows
+- **Performance Critical**: Hanzo Studio is used for real-time AI workflows
 - **Community Driven**: Strong emphasis on stakeholder input and consensus
 
 ### Common Patterns to Follow
@@ -231,4 +231,4 @@ gh pr create --title "RFC: My Feature" --body "See RFC document for details"
 - **Performance Analysis**: Include performance impact assessment
 - **Documentation**: Update specifications when APIs change
 
-This repository represents the formal governance layer for ComfyUI's evolution, ensuring thoughtful consideration of changes that will impact the broader ecosystem.
+This repository represents the formal governance layer for Hanzo Studio's evolution, ensuring thoughtful consideration of changes that will impact the broader ecosystem.

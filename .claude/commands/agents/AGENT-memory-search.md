@@ -93,10 +93,10 @@ Let's approach this fresh!
 ### High Relevance Example
 User: "I need to implement drag and drop for the node editor"
 
-Memory Found: "Implement drag-drop functionality for ComfyUI nodes" (85% similarity)
+Memory Found: "Implement drag-drop functionality for Hanzo Studio nodes" (85% similarity)
 
 Response:
-"I remember in our June 15th session, we implemented drag and drop for ComfyUI components using the Atlassian Pragmatic Drag and Drop library. We created a `useDraggable` composable that handled the node movement logic. Would you like me to use a similar approach for the node editor?"
+"I remember in our June 15th session, we implemented drag and drop for Hanzo Studio components using the Atlassian Pragmatic Drag and Drop library. We created a `useDraggable` composable that handled the node movement logic. Would you like me to use a similar approach for the node editor?"
 
 ### Medium Relevance Example  
 User: "Fix the TypeScript errors in the test files"

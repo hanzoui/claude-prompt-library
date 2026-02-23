@@ -1,8 +1,8 @@
-# Icon Migration Methodology for ComfyUI Frontend
+# Icon Migration Methodology for Hanzo Frontend
 
 ## Overview
 
-Systematic approach for preparing icon system migrations, specifically developed for ComfyUI's transition from PrimeIcons to Lucide. This methodology ensures complete inventory, designer-friendly tooling, and zero missed icons during migration.
+Systematic approach for preparing icon system migrations, specifically developed for Hanzo Studio's transition from PrimeIcons to Lucide. This methodology ensures complete inventory, designer-friendly tooling, and zero missed icons during migration.
 
 ## Pre-Migration Assessment Process
 
@@ -20,7 +20,7 @@ patterns = {
 }
 ```
 
-**Real ComfyUI patterns discovered:**
+**Real Hanzo Studio patterns discovered:**
 - **PrimeIcons**: 112 unique icons (`pi pi-folder`, `PrimeIcons.FOLDER`)
 - **Material Design Icons**: 1 dynamic pattern (`mdi mdi-${icon}`)
 - **Iconify**: 11 icons (`lucide:play`, `material-symbols:pan-tool-outline`)
@@ -110,7 +110,7 @@ def get_semantic_description(file_path: str, icon_name: str) -> str:
 
 ## Implementation Results
 
-### ComfyUI Inventory Statistics
+### Hanzo Studio Inventory Statistics
 - **520 files scanned**
 - **112 unique PrimeIcons** identified
 - **Multiple icon systems** in parallel use
